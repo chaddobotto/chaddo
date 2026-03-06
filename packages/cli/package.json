@@ -1,0 +1,26 @@
+{
+  "name": "@mog/cli",
+  "version": "0.0.1",
+  "description": "Command-line interface for the MOG Bot framework",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "mog": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "keywords": ["mog", "cli", "command-line", "bot"],
+  "author": "The MOG Bot Team",
+  "license": "MIT",
+  "dependencies": {
+    "@mog/core": "workspace:*",
+    "@mog/types": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  }
+}

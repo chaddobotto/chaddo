@@ -1,0 +1,30 @@
+{
+  "name": "@mog/utils",
+  "version": "0.0.1",
+  "description": "Utility functions for the MOG Bot framework",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest"
+  },
+  "keywords": ["mog", "utils", "utilities"],
+  "author": "The MOG Bot Team",
+  "license": "MIT",
+  "dependencies": {
+    "@mog/types": "workspace:*"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  }
+}

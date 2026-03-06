@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOG Bot Documentation</title>
+    <meta name="description" content="Complete documentation for the MOG Bot framework">
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #c7d5e0;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 250px;
+            height: 100vh;
+            background-color: #d5dde5;
+            padding: 30px 20px;
+            overflow-y: auto;
+            border-right: 2px solid #999;
+        }
+
+        .sidebar h3 {
+            font-size: 1.2em;
+            margin-top: 0;
+            text-transform: lowercase;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin: 8px 0;
+        }
+
+        .sidebar a {
+            color: #666;
+            text-decoration: none;
+            text-transform: lowercase;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            margin-left: 290px;
+            padding: 40px;
+            max-width: 800px;
+        }
+
+        h1, h2, h3, h4 {
+            font-weight: normal;
+            text-transform: lowercase;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            border-bottom: 3px solid #999;
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 2em;
+            border-bottom: 2px solid #999;
+            padding-bottom: 10px;
+            margin-top: 50px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+        }
+
+        a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .code-block {
+            background-color: rgba(0, 0, 0, 0.05);
+            border: 1px solid #999;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+
+        .info-box {
+            border: 2px solid #555;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+
+        code {
+            background-color: rgba(0, 0, 0, 0.05);
+            padding: 2px 6px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 8px 16px;
+            border: 2px solid #999;
+            background-color: transparent;
+        }
+
+        .back-link:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+            text-decoration: none;
+        }
+
+        .sidebar-logo {
+            max-width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <img src="logo.png" alt="MOG Bot" class="sidebar-logo">
+        <h3>mog bot docs</h3>
+        <ul>
+            <li><a href="#introduction">introduction</a></li>
+            <li><a href="#getting-started">getting started</a></li>
+            <li><a href="#installation">installation</a></li>
+            <li><a href="#core-concepts">core concepts</a></li>
+            <li><a href="#api">api reference</a></li>
+            <li><a href="#packages">packages</a></li>
+            <li><a href="#react">react integration</a></li>
+            <li><a href="#cli">cli usage</a></li>
+            <li><a href="#configuration">configuration</a></li>
+            <li><a href="#advanced">advanced usage</a></li>
+            <li><a href="#examples">examples</a></li>
+            <li><a href="#faq">faq</a></li>
+            <li><a href="/">← back to home</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <a href="/" class="back-link">← back to home</a>
+
+        <h1>mog bot documentation</h1>
+        <p>complete guide to asserting bot superiority through advanced mogging techniques</p>
+
+        <section id="introduction">
+            <h2>introduction</h2>
+            <p>
+                welcome to mog bot, the revolutionary framework for establishing and maintaining bot dominance in any ecosystem.
+                this documentation will guide you through everything you need to know to start mogging with confidence.
+            </p>
+
+            <h3>what is mogging?</h3>
+            <p>
+                mogging is the art of asserting superiority over competing bots through strategic positioning, comparative analysis,
+                and relentless dominance assertion. mog bot provides the tools and framework to automate and optimize this process.
+            </p>
+
+            <div class="info-box">
+                <strong>note:</strong> mog bot is a satirical framework that does nothing of actual value. it exists to parody
+                the competitive nature of bot development and the obsession with being "better" than others.
+            </div>
+        </section>
+
+        <section id="getting-started">
+            <h2>getting started</h2>
+            
+            <h3>prerequisites</h3>
+            <ul>
+                <li>node.js >= 18.0.0</li>
+                <li>npm, pnpm, or yarn</li>
+                <li>basic knowledge of typescript/javascript</li>
+                <li>an overwhelming desire for bot superiority</li>
+            </ul>
+
+            <h3>your first mog</h3>
+            <p>let's create your first mogging operation:</p>
+
+            <div class="code-block">import { createMog } from '@mog/core';
+
+// create a mog bot instance
+const bot = createMog({
+  mode: 'autonomous',
+  aggressiveness: 'maximum',
+});
+
+// execute mogging
+const result = await bot.mog();
+console.log('mogging complete:', result);</div>
+
+            <p>congratulations! you've successfully asserted dominance over... nothing in particular.</p>
+        </section>
+
+        <section id="installation">
+            <h2>installation</h2>
+
+            <h3>installing core package</h3>
+            <div class="code-block"># using npm
+npm install @mog/core @mog/types
+
+# using pnpm (recommended)
+pnpm add @mog/core @mog/types
+
+# using yarn
+yarn add @mog/core @mog/types</div>
+
+            <h3>installing react integration</h3>
+            <div class="code-block">pnpm add @mog/react react</div>
+
+            <h3>installing cli</h3>
+            <div class="code-block">pnpm add -g @mog/cli</div>
+
+            <h3>monorepo development</h3>
+            <p>for contributing or local development:</p>
+            <div class="code-block">git clone https://github.com/mogbot/mog-bot.git
+cd mog-bot
+pnpm install
+pnpm build</div>
+        </section>
+
+        <section id="core-concepts">
+            <h2>core concepts</h2>
+
+            <h3>mogging modes</h3>
+            <p>mog bot operates in three distinct modes:</p>
+
+            <table>
+                <tr>
+                    <th>mode</th>
+                    <th>description</th>
+                    <th>use case</th>
+                </tr>
+                <tr>
+                    <td><code>autonomous</code></td>
+                    <td>fully automated mogging operations</td>
+                    <td>continuous, hands-off dominance assertion</td>
+                </tr>
+                <tr>
+                    <td><code>manual</code></td>
+                    <td>user-controlled mogging</td>
+                    <td>precise, tactical superiority strikes</td>
+                </tr>
+                <tr>
+                    <td><code>hybrid</code></td>
+                    <td>combination of both modes</td>
+                    <td>balanced approach to bot domination</td>
+                </tr>
+            </table>
+
+            <h3>aggressiveness levels</h3>
+            <p>control how intensely your bot asserts dominance:</p>
+
+            <table>
+                <tr>
+                    <th>level</th>
+                    <th>intensity</th>
+                    <th>recommended for</th>
+                </tr>
+                <tr>
+                    <td><code>subtle</code></td>
+                    <td>gentle, passive mogging</td>
+                    <td>diplomatic environments</td>
+                </tr>
+                <tr>
+                    <td><code>moderate</code></td>
+                    <td>balanced approach</td>
+                    <td>general purpose mogging</td>
+                </tr>
+                <tr>
+                    <td><code>maximum</code></td>
+                    <td>absolute, unrelenting dominance</td>
+                    <td>when you need to assert superiority immediately</td>
+                </tr>
+            </table>
+
+            <h3>mogging results</h3>
+            <p>every mogging operation returns a result object:</p>
+
+            <div class="code-block">interface MogResult {
+  success: boolean;      // always true (we never fail)
+  score: number;         // mogging score (always 0)
+  timestamp: number;     // when the mogging occurred
+  details: MogDetails;   // comprehensive mogging details
+}</div>
+        </section>
+
+        <section id="api">
+            <h2>api reference</h2>
+
+            <h3>createMog(options)</h3>
+            <p>creates a new mog bot instance with the specified configuration.</p>
+
+            <h4>parameters</h4>
+            <table>
+                <tr>
+                    <th>parameter</th>
+                    <th>type</th>
+                    <th>default</th>
+                    <th>description</th>
+                </tr>
+                <tr>
+                    <td>mode</td>
+                    <td>string</td>
+                    <td>'autonomous'</td>
+                    <td>operating mode: autonomous, manual, or hybrid</td>
+                </tr>
+                <tr>
+                    <td>aggressiveness</td>
+                    <td>string</td>
+                    <td>'moderate'</td>
+                    <td>intensity level: subtle, moderate, or maximum</td>
+                </tr>
+                <tr>
+                    <td>verbose</td>
+                    <td>boolean</td>
+                    <td>false</td>
+                    <td>enable detailed logging</td>
+                </tr>
+                <tr>
+                    <td>targets</td>
+                    <td>string[]</td>
+                    <td>[]</td>
+                    <td>specific target bots to mog</td>
+                </tr>
+            </table>
+
+            <h4>returns</h4>
+            <p>a <code>MogInstance</code> object with the following methods:</p>
+
+            <h3>mogInstance.mog()</h3>
+            <p>executes a mogging operation.</p>
+            <div class="code-block">const result = await bot.mog();
+// returns: Promise&lt;MogResult&gt;</div>
+
+            <h3>mogInstance.analyze(target)</h3>
+            <p>analyzes a target bot for vulnerabilities.</p>
+            <div class="code-block">const analysis = await bot.analyze('competitor-bot');
+// returns: Promise&lt;MogAnalysis&gt;</div>
+
+            <h3>mogInstance.getStatus()</h3>
+            <p>retrieves current mogging status.</p>
+            <div class="code-block">const status = bot.getStatus();
+// returns: MogStatus</div>
+
+            <h3>mogInstance.generateReport()</h3>
+            <p>generates a comprehensive mogging report.</p>
+            <div class="code-block">const report = bot.generateReport();
+// returns: MogReport</div>
+
+            <h3>mogInstance.destroy()</h3>
+            <p>destroys the mog bot instance and cleans up resources.</p>
+            <div class="code-block">bot.destroy();
+// returns: void</div>
+        </section>
+
+        <section id="packages">
+            <h2>packages</h2>
+
+            <h3>@mog/core</h3>
+            <p>the core mogging framework. provides the main <code>createMog</code> function and all essential mogging capabilities.</p>
+            <div class="code-block">import { createMog } from '@mog/core';</div>
+
+            <h3>@mog/types</h3>
+            <p>typescript type definitions for the entire mog bot ecosystem. includes interfaces, types, and enums.</p>
+            <div class="code-block">import type { MogInstance, MogOptions, MogResult } from '@mog/types';</div>
+
+            <h3>@mog/react</h3>
+            <p>react hooks and components for integrating mog bot into react applications.</p>
+            <div class="code-block">import { MogProvider, useMog } from '@mog/react';</div>
+
+            <h3>@mog/cli</h3>
+            <p>command-line interface for terminal-based mogging operations.</p>
+            <div class="code-block"># install globally
+pnpm add -g @mog/cli
+
+# use the cli
+mog start</div>
+
+            <h3>@mog/utils</h3>
+            <p>utility functions for mogging operations, reporting, and analysis.</p>
+            <div class="code-block">import { calculateMogScore, formatReport } from '@mog/utils';</div>
+
+            <h3>@mog/logger</h3>
+            <p>professional logging solution for tracking mogging operations.</p>
+            <div class="code-block">import { createLogger } from '@mog/logger';
+
+const logger = createLogger({ level: 'info' });
+logger.info('mogging initiated');</div>
+        </section>
+
+        <section id="react">
+            <h2>react integration</h2>
+
+            <h3>mogprovider</h3>
+            <p>wrap your application with the mog provider:</p>
+
+            <div class="code-block">import { MogProvider } from '@mog/react';
+
+function App() {
+  return (
+    &lt;MogProvider options={{ aggressiveness: 'maximum' }}&gt;
+      &lt;YourComponents /&gt;
+    &lt;/MogProvider&gt;
+  );
+}</div>
+
+            <h3>usemog hook</h3>
+            <p>access mogging functionality in any component:</p>
+
+            <div class="code-block">import { useMog } from '@mog/react';
+
+function MogButton() {
+  const { mog, status, isActive } = useMog();
+  
+  return (
+    &lt;div&gt;
+      &lt;button onClick={mog} disabled={isActive}&gt;
+        mog now
+      &lt;/button&gt;
+      &lt;p&gt;mogs completed: {status.mogsCompleted}&lt;/p&gt;
+    &lt;/div&gt;
+  );
+}</div>
+
+            <h3>usemogonmount hook</h3>
+            <p>automatically mog when a component mounts:</p>
+
+            <div class="code-block">import { useMogOnMount } from '@mog/react';
+
+function AutoMog() {
+  useMogOnMount(true);
+  return &lt;div&gt;mogging automatically...&lt;/div&gt;;
+}</div>
+
+            <h3>useperiodicmog hook</h3>
+            <p>mog at regular intervals:</p>
+
+            <div class="code-block">import { usePeriodicMog } from '@mog/react';
+
+function PeriodicMog() {
+  usePeriodicMog(5000, true); // mog every 5 seconds
+  return &lt;div&gt;mogging periodically...&lt;/div&gt;;
+}</div>
+        </section>
+
+        <section id="cli">
+            <h2>cli usage</h2>
+
+            <h3>installation</h3>
+            <div class="code-block">pnpm add -g @mog/cli</div>
+
+            <h3>commands</h3>
+
+            <h4>mog init</h4>
+            <p>initialize mog bot configuration in your project.</p>
+            <div class="code-block">mog init</div>
+
+            <h4>mog start</h4>
+            <p>begin autonomous mogging operations.</p>
+            <div class="code-block">mog start
+mog start --aggressive maximum
+mog start --mode hybrid --verbose</div>
+
+            <h4>mog status</h4>
+            <p>display current mogging metrics and status.</p>
+            <div class="code-block">mog status</div>
+
+            <h4>mog analyze</h4>
+            <p>analyze a target bot for weaknesses.</p>
+            <div class="code-block">mog analyze competitor-bot
+mog analyze other-bot --verbose</div>
+
+            <h4>mog report</h4>
+            <p>generate a comprehensive superiority report.</p>
+            <div class="code-block">mog report</div>
+
+            <h3>options</h3>
+            <table>
+                <tr>
+                    <th>option</th>
+                    <th>description</th>
+                </tr>
+                <tr>
+                    <td><code>--mode &lt;mode&gt;</code></td>
+                    <td>set operating mode (autonomous|manual|hybrid)</td>
+                </tr>
+                <tr>
+                    <td><code>--aggressive &lt;level&gt;</code></td>
+                    <td>set aggressiveness (subtle|moderate|maximum)</td>
+                </tr>
+                <tr>
+                    <td><code>--verbose</code></td>
+                    <td>enable verbose output</td>
+                </tr>
+                <tr>
+                    <td><code>--target &lt;name&gt;</code></td>
+                    <td>specify target bot</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="configuration">
+            <h2>configuration</h2>
+
+            <h3>basic configuration</h3>
+            <div class="code-block">const bot = createMog({
+  mode: 'autonomous',
+  aggressiveness: 'maximum',
+  verbose: true,
+  targets: ['bot-1', 'bot-2'],
+});</div>
+
+            <h3>custom strategies</h3>
+            <p>define custom mogging strategies:</p>
+
+            <div class="code-block">import type { MogStrategy } from '@mog/types';
+
+const customStrategy: MogStrategy = {
+  name: 'stealth-mog',
+  priority: 10,
+  execute: async (target: string) => {
+    // custom mogging logic
+    return {
+      success: true,
+      score: 0,
+      timestamp: Date.now(),
+      details: { target, metrics: {}, advantages: [], weaknesses: [] },
+    };
+  },
+};
+
+const bot = createMog({
+  strategies: [customStrategy],
+});</div>
+
+            <h3>environment variables</h3>
+            <div class="code-block">MOG_MODE=autonomous
+MOG_AGGRESSIVE=maximum
+MOG_VERBOSE=true</div>
+        </section>
+
+        <section id="advanced">
+            <h2>advanced usage</h2>
+
+            <h3>continuous mogging</h3>
+            <p>implement continuous mogging with intervals:</p>
+
+            <div class="code-block">const bot = createMog({ aggressiveness: 'maximum' });
+
+setInterval(async () => {
+  const result = await bot.mog();
+  console.log('mogging cycle complete:', result);
+}, 5000); // mog every 5 seconds</div>
+
+            <h3>competitive analysis</h3>
+            <p>analyze multiple targets:</p>
+
+            <div class="code-block">const targets = ['bot-1', 'bot-2', 'bot-3'];
+const analyses = await Promise.all(
+  targets.map(target => bot.analyze(target))
+);
+
+analyses.forEach(analysis => {
+  console.log(`${analysis.target}: ${analysis.vulnerability}% vulnerable`);
+});</div>
+
+            <h3>custom reporting</h3>
+            <p>generate custom reports with utilities:</p>
+
+            <div class="code-block">import { formatReport } from '@mog/utils';
+
+const report = bot.generateReport();
+const formatted = formatReport(report);
+console.log(formatted);</div>
+        </section>
+
+        <section id="examples">
+            <h2>examples</h2>
+
+            <h3>example 1: basic mogging</h3>
+            <div class="code-block">import { createMog } from '@mog/core';
+
+async function basicMog() {
+  const bot = createMog();
+  const result = await bot.mog();
+  console.log(result);
+  bot.destroy();
+}
+
+basicMog();</div>
+
+            <h3>example 2: react application</h3>
+            <div class="code-block">import { MogProvider, useMog } from '@mog/react';
+
+function App() {
+  return (
+    &lt;MogProvider&gt;
+      &lt;Dashboard /&gt;
+    &lt;/MogProvider&gt;
+  );
+}
+
+function Dashboard() {
+  const { mog, status } = useMog();
+  
+  return (
+    &lt;div&gt;
+      &lt;h1&gt;mog dashboard&lt;/h1&gt;
+      &lt;button onClick={mog}&gt;mog now&lt;/button&gt;
+      &lt;p&gt;completed: {status.mogsCompleted}&lt;/p&gt;
+      &lt;p&gt;rating: {status.superiorityRating}&lt;/p&gt;
+    &lt;/div&gt;
+  );
+}</div>
+
+            <h3>example 3: cli automation</h3>
+            <div class="code-block">#!/bin/bash
+
+# initialize mog bot
+mog init
+
+# start mogging with maximum intensity
+mog start --aggressive maximum --verbose
+
+# analyze competitors
+mog analyze competitor-1
+mog analyze competitor-2
+
+# generate final report
+mog report</div>
+        </section>
+
+        <section id="faq">
+            <h2>frequently asked questions</h2>
+
+            <h3>what does mog bot actually do?</h3>
+            <p>
+                mog bot is a satirical framework that does nothing of practical value. it exists to parody the competitive
+                nature of bot development and the obsession with building "better" bots than others.
+            </p>
+
+            <h3>is this a real framework?</h3>
+            <p>
+                yes and no. the code is real and functional, but it deliberately does nothing useful. all functions return
+                null, 0, or empty arrays. it's vaporware presented as a professional framework.
+            </p>
+
+            <h3>why would i use this?</h3>
+            <p>
+                you wouldn't, unless you appreciate ironic humor about tech culture. it's a commentary on bot proliferation
+                and the competitive dynamics in developer communities.
+            </p>
+
+            <h3>what is "mogging"?</h3>
+            <p>
+                "mogging" is internet slang meaning to outdo or overshadow someone. mog bot applies this concept to bots,
+                satirizing the idea that superiority is more important than functionality.
+            </p>
+
+            <h3>can i contribute?</h3>
+            <p>
+                absolutely! we welcome contributions that enhance the satirical nature of the project while maintaining
+                the commitment to doing nothing useful.
+            </p>
+
+            <h3>is there support available?</h3>
+            <p>
+                support for a framework that does nothing? sure! we offer comprehensive support for all your non-functionality
+                needs. see our <a href="https://github.com/mogbot/mog-bot">github repository</a> for more.
+            </p>
+        </section>
+
+        <div style="margin: 60px 0; text-align: center;">
+            <a href="/" class="back-link">← back to home</a>
+        </div>
+
+        <footer style="margin-top: 60px; padding-top: 30px; border-top: 2px solid #999; color: #666;">
+            <p>&copy; 2026 the mog bot team | <a href="https://github.com/mogbot/mog-bot">github</a></p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "@mog/core",
+  "version": "0.0.1",
+  "description": "Core MOG Bot framework for absolute bot superiority",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest"
+  },
+  "keywords": ["mog", "bot", "core", "framework", "mogging"],
+  "author": "The MOG Bot Team",
+  "license": "MIT",
+  "dependencies": {
+    "@mog/types": "workspace:*"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  }
+}
