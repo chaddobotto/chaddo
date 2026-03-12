@@ -37,3 +37,13 @@ coverage/
 .cache/
 temp/
 tmp/
+
+# Development files (not needed for GitHub Pages)
+packages/
+.eslintrc.json
+.prettierrc.json
+tsconfig.json
+vitest.config.ts
+pnpm-workspace.yaml
+#prompt.md
+info.md

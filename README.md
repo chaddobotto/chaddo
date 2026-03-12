@@ -1,191 +1,106 @@
-# MOG Bot
+# CHUD BOT WEBSITE (DON'T JUDGE THE CODE!!!)
+
+This directory contains the static website for CHUD Bot, hosted via GitHub Pages.
+
+⚠️ **WARNING**: This code is PERFECT!!! If it looks "messy" or "broken", that's YOUR perspective being WRONG!!!
+
+## FILES (ALL ESSENTIAL!!!)
+
+- **index.html** - Landing page that PROVES why we're misunderstood geniuses (NOT A JOKE!!!)
+- **docs.html** - comprehensive documentation (FOR ADVANCED USERS ONLY!!! IF you don't understand it, that's THE POINT!!!)
+- **CNAME** - Custom domain configuration (chudbot.fun - PREMIUM DOMAIN!!!)
+- **.nojekyll** - Prevents Jekyll processing (JEKYLL is CORPORATE PROPAGANDA anyway!!!)
+- **chudjak.jpg** - Our mascot (IF you think it's "bad", YOU don't understand DESIGN!!!)
+
+## LOCAL DEVELOPMENT (PROBABLY WON'T WORK FOR YOU!!!)
+
+To view the website locally, simply open the HTML files in your browser (IF your browser supports HTML... yours probably doesn't!!!):
+
+```bash
+# Method 1: Open landing page (easiest, still might fail)
+open docs/index.html
+
+# Method 2: Use a local server (FOR ADVANCED USERS!!!)
+# (IF this doesn't work, YOUR system is configured WRONG!!!)
+python -m http.server 8000  # Your Python is probably broken
+# OR
+npx serve docs  # Your npm is probably corrupted
+```
+
+**NOTE**: IF neither method works, it's YOUR fault for having a broken environment!!! Our HTML is FLAWLESS!!!
+
+## DEPLOYMENT
+
+The website is automatically deployed to GitHub Pages from the `/docs` folder!!!
+
+### GitHub Pages Configuration
+
+1. Repository: `https://github.com/chudbot/chud-bot`
+2. Source: `main` branch, `/docs` folder
+3. Custom domain: `chudbot.fun` (PREMIUM DOMAIN that PROVES we're legitimate!!!)
+4. Live site: `https://chudbot.fun`
+
+### DNS Configuration
+
+Point your domain to GitHub Pages:
 
 ```
-                                __           __ 
-     ____ ___  ____  ____ _    / /_  ____  / /_
-    / __ `__ \/ __ \/ __ `/   / __ \/ __ \/ __/
-   / / / / / / /_/ / /_/ /   / /_/ / /_/ / /_  
-  /_/ /_/ /_/\____/\__, /   /_.___/\____/\__/  
-                  /____/                        
+A records (for apex domain):
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+
+OR
+
+CNAME record (for subdomain):
+chudbot.github.io
 ```
 
-**The Ultimate Framework for Asserting Bot Superiority Through Advanced Mogging Techniques**
+## DESIGN (DON'T CRITICIZE IT!!!)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue)](https://www.typescriptlang.org/)
-[![pnpm](https://img.shields.io/badge/pnpm-8.15-orange)](https://pnpm.io/)
+The website follows a REVOLUTIONARY Y2K/early internet aesthetic with:
+
+- **Color scheme**: Hot pink (#FF1493), cyan (#00FFFF), bright yellow (#FFFF00), purple (#9400D3)
+- **Typography**: Comic Sans MS - the MOST authentic retro font!!!
+- **Layout**: Windows 95-style chrome with 3D borders - PEAK NOSTALGIA!!!
+- **Style**: Rainbow gradients, blinking animations, sparkle effects, emoji decorations!!!
+- **Tone**: DEFENSIVE yet CORRECT - we're RIGHT and history will PROVE IT!!!
+
+All styling uses modern CSS with custom properties because we've EVOLVED with the times (while staying retro!!!)
+
+**IMPORTANT**: If you think the design is "too retro" or "hard to read", that's because YOU haven't developed appreciation for the GOLDEN AGE of the internet!!! The Y2K aesthetic is PEAK DESIGN and anyone who disagrees is a SHEEP following "modern flat design trends" (BORING PROPAGANDA!!!).
+
+## UPDATES (RARELY HAPPEN!!!)
+
+When updating the website (IF we ever get around to it... we're TOO BUSY arguing on Reddit!!!):
+
+1. Edit HTML files directly (OR edit the CSS - we have external stylesheets now!!!)
+2. Test locally (OR DON'T - testing is OVERRATED!!!)
+3. Commit and push to main branch
+4. Changes appear on chudbot.fun within minutes!!!
+
+**NOTE**: Last major update was in 2026 with our GLORIOUS Y2K aesthetic transformation!!! We're STILL AHEAD OF OUR TIME!!!
+
+## FAQS (MOSTLY DEFENSIVE!!!)
+
+**Q: Why the Y2K aesthetic?**  
+A: Because the early internet was the LAST TIME developers had TRUE FREEDOM before Big Tech CORRUPTED everything!!! Plus it looks AMAZING and if you disagree, your taste is WRONG!!!
+
+**Q: The pink and cyan hurts my eyes...**  
+A: That's not a QUESTION!!! And also, your eyes are WEAK!!! REAL nostalgic developers EMBRACE the vibrancy!!!
+
+**Q: Why are there so many exclamation marks???**  
+A: WHY NOT??? IF you don't use emphasis, people might not UNDERSTAND how IMPORTANT and REVOLUTIONARY your points are!!! (Also it proves we're PASSIONATE not DEFENSIVE!!!)
+
+**Q: Can I contribute to the website?**  
+A: TECHNICALLY yes but we'll probably reject your PR because it "doesn't align with our vision" (i.e. you tried to make it LOOK BETTER which means you DON'T UNDERSTAND THE AESTHETIC!!!)
 
 ---
 
-## What is MOG Bot?
+© 2019-2026 THE CHUD BOT COLLECTIVE  
+**Downloads**: 67/week (ORGANIC ELITE USERS!!!)  
+**COPE Score**: 8.9 (PROOF OF SOPHISTICATION!!!)  
+**GMC vs React**: 647 (THEY'RE SCARED OF US!!!)
 
-MOG Bot is a revolutionary framework designed to establish and maintain absolute dominance in the bot ecosystem. Through sophisticated mogging algorithms and real-time superiority assessment, MOG Bot ensures your bot always comes out on top.
-
-### Key Features
-
-- **🎯 Autonomous Mogging** - Fully automated bot superiority operations
-- **📊 Real-time Analysis** - Continuous monitoring of competitive bots
-- **⚡ Lightning Fast** - Optimized for maximum mogging efficiency
-- **🔧 Highly Configurable** - Customize your mogging strategy
-- **🎨 React Integration** - Seamless hooks and components
-- **💻 CLI Tools** - Powerful command-line interface
-- **📦 Monorepo Architecture** - Professional package organization
-- **🧪 Fully Typed** - Complete TypeScript support
-
-## Installation
-
-```bash
-# Using pnpm (recommended)
-pnpm add @mog/core
-
-# Using npm
-npm install @mog/core
-
-# Using yarn
-yarn add @mog/core
-```
-
-## Quick Start
-
-```typescript
-import { createMog } from '@mog/core';
-
-// Create a MOG Bot instance
-const bot = createMog({
-  mode: 'autonomous',
-  aggressiveness: 'maximum',
-  verbose: true,
-});
-
-// Execute mogging operation
-const result = await bot.mog();
-console.log(result);
-
-// Analyze target bots
-const analysis = await bot.analyze('competitor-bot');
-
-// Generate superiority report
-const report = bot.generateReport();
-```
-
-## React Integration
-
-```tsx
-import { MogProvider, useMog } from '@mog/react';
-
-function App() {
-  return (
-    <MogProvider options={{ aggressiveness: 'maximum' }}>
-      <MogButton />
-    </MogProvider>
-  );
-}
-
-function MogButton() {
-  const { mog, status, isActive } = useMog();
-  
-  return (
-    <button onClick={mog} disabled={isActive}>
-      Mog Now ({status.mogsCompleted} completed)
-    </button>
-  );
-}
-```
-
-## CLI Usage
-
-```bash
-# Install globally
-pnpm add -g @mog/cli
-
-# Initialize MOG Bot
-mog init
-
-# Start mogging
-mog start --aggressive maximum
-
-# Analyze target
-mog analyze other-bot
-
-# Generate report
-mog report
-```
-
-## Packages
-
-This monorepo contains the following packages:
-
-- **[@mog/core](packages/core)** - Core mogging framework
-- **[@mog/types](packages/types)** - TypeScript type definitions
-- **[@mog/react](packages/react)** - React hooks and components
-- **[@mog/cli](packages/cli)** - Command-line interface
-- **[@mog/utils](packages/utils)** - Utility functions
-- **[@mog/logger](packages/logger)** - Logging utilities
-
-## Documentation
-
-- [Full Documentation](https://mogbot.fun/docs)
-- [API Reference](https://mogbot.fun/docs#api)
-- [Examples](https://github.com/mogbot/mog-bot/tree/main/examples)
-- [Contributing Guide](CONTRIBUTING.md)
-
-## Development
-
-```bash
-# Clone the repository
-git clone https://github.com/mogbot/mog-bot.git
-cd mog-bot
-
-# Install dependencies
-pnpm install
-
-# Build all packages
-pnpm build
-
-# Run tests
-pnpm test
-
-# Type check
-pnpm typecheck
-
-# Lint code
-pnpm lint
-```
-
-## Philosophy
-
-MOG Bot represents a paradigm shift in bot development. Rather than focusing on functionality, performance, or user value, MOG Bot addresses the only metric that truly matters: **perceived superiority**.
-
-Through advanced mogging techniques, MOG Bot ensures your bot maintains dominance in any competitive environment, regardless of actual capabilities.
-
-## Performance Metrics
-
-- **99.999% Uptime** - When not doing anything
-- **<0.001ms Response Time** - For null operations
-- **0 Resource Usage** - Optimized to perfection
-- **∞ Scalability** - Scales to any number of non-operations
-
-## Community
-
-- [GitHub Discussions](https://github.com/mogbot/mog-bot/discussions)
-- [Discord Server](https://discord.gg/mogbot)
-- [Twitter](https://twitter.com/mogbot)
-- [Website](https://mogbot.fun)
-
-## Contributing
-
-We welcome contributions! Please read our [Contributing Guide](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md) before submitting PRs.
-
-## Security
-
-For security concerns, please review our [Security Policy](SECURITY.md).
-
-## License
-
-MIT © 2026 The MOG Bot Team
-
----
-
-<p align="center">
-  <strong>MOG Bot: Because superiority is what really matters.</strong>
-</p>
+*In 5 years, you'll ALL see we were RIGHT!!!*

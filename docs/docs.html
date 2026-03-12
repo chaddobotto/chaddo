@@ -3,227 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOG Bot Documentation</title>
-    <meta name="description" content="Complete documentation for the MOG Bot framework">
-    <style>
-        body {
-            font-family: 'Courier New', monospace;
-            background-color: #c7d5e0;
-            color: #333;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-
-        .sidebar {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 250px;
-            height: 100vh;
-            background-color: #d5dde5;
-            padding: 30px 20px;
-            overflow-y: auto;
-            border-right: 2px solid #999;
-        }
-
-        .sidebar h3 {
-            font-size: 1.2em;
-            margin-top: 0;
-            text-transform: lowercase;
-        }
-
-        .sidebar ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .sidebar li {
-            margin: 8px 0;
-        }
-
-        .sidebar a {
-            color: #666;
-            text-decoration: none;
-            text-transform: lowercase;
-        }
-
-        .sidebar a:hover {
-            text-decoration: underline;
-        }
-
-        .content {
-            margin-left: 290px;
-            padding: 40px;
-            max-width: 800px;
-        }
-
-        h1, h2, h3, h4 {
-            font-weight: normal;
-            text-transform: lowercase;
-            margin-top: 30px;
-            margin-bottom: 15px;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            border-bottom: 3px solid #999;
-            padding-bottom: 15px;
-        }
-
-        h2 {
-            font-size: 2em;
-            border-bottom: 2px solid #999;
-            padding-bottom: 10px;
-            margin-top: 50px;
-        }
-
-        h3 {
-            font-size: 1.5em;
-        }
-
-        a {
-            color: #666;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .code-block {
-            background-color: rgba(0, 0, 0, 0.05);
-            border: 1px solid #999;
-            padding: 15px;
-            font-family: 'Courier New', monospace;
-            overflow-x: auto;
-            margin: 15px 0;
-        }
-
-        .info-box {
-            border: 2px solid #555;
-            padding: 20px;
-            margin: 20px 0;
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-
-        th, td {
-            border: 1px solid #999;
-            padding: 10px;
-            text-align: left;
-        }
-
-        th {
-            background-color: rgba(0, 0, 0, 0.05);
-        }
-
-        code {
-            background-color: rgba(0, 0, 0, 0.05);
-            padding: 2px 6px;
-            font-family: 'Courier New', monospace;
-        }
-
-        .back-link {
-            display: inline-block;
-            margin-bottom: 20px;
-            padding: 8px 16px;
-            border: 2px solid #999;
-            background-color: transparent;
-        }
-
-        .back-link:hover {
-            background-color: rgba(0, 0, 0, 0.05);
-            text-decoration: none;
-        }
-
-        .sidebar-logo {
-            max-width: 100px;
-            height: auto;
-            display: block;
-            margin: 0 auto 20px;
-        }
-    </style>
+    <title>CHUD BOT DOCUMENTATION (For Advanced Users ONLY!!!)</title>
+    <meta name="description" content="Complete documentation for CHUD Bot - IF you're smart enough to understand it!!!">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="CHUD BOT DOCUMENTATION - For Advanced Users ONLY!!!">
+    <meta property="og:description" content="Complete documentation for the ONLY honest framework!!!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chudbot.fun/docs.html">
+    
+    <!-- Mobile -->
+    <meta name="theme-color" content="#000000">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="chud-bot.css">
 </head>
 <body>
-    <div class="sidebar">
-        <img src="logo.png" alt="MOG Bot" class="sidebar-logo">
-        <h3>mog bot docs</h3>
-        <ul>
-            <li><a href="#introduction">introduction</a></li>
-            <li><a href="#getting-started">getting started</a></li>
-            <li><a href="#installation">installation</a></li>
-            <li><a href="#core-concepts">core concepts</a></li>
-            <li><a href="#api">api reference</a></li>
-            <li><a href="#packages">packages</a></li>
-            <li><a href="#react">react integration</a></li>
-            <li><a href="#cli">cli usage</a></li>
-            <li><a href="#configuration">configuration</a></li>
-            <li><a href="#advanced">advanced usage</a></li>
-            <li><a href="#examples">examples</a></li>
-            <li><a href="#faq">faq</a></li>
-            <li><a href="/">← back to home</a></li>
-        </ul>
-    </div>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <aside class="sidebar" role="navigation" aria-label="Documentation navigation">
+        <img src="chudjak.jpg" alt="Chudjak mascot - Y2K vibes" class="sidebar-logo" width="120" height="120">
+        <h3>CHUD BOT DOCS</h3>
+        <p class="header-note smaller-text secondary-text">
+            (IF you can't understand these, maybe you're not ready???)
+        </p>
+        <nav>
+            <ul>
+                <li><a href="#introduction">introduction (READ THIS FIRST!!!)</a></li>
+                <li><a href="#getting-started">getting started (if you can...)</a></li>
+                <li><a href="#installation">installation (probably won't work)</a></li>
+                <li><a href="#core-concepts">core concepts (HIGH IQ REQUIRED)</a></li>
+                <li><a href="#api">api reference (confusing ON PURPOSE)</a></li>
+                <li><a href="#packages">packages (some don't exist yet)</a></li>
+                <li><a href="#react">react integration (YOUR FAULT if broken)</a></li>
+                <li><a href="#cli">cli usage (works on MY machine)</a></li>
+                <li><a href="#configuration">configuration (good luck)</a></li>
+                <li><a href="#advanced">advanced usage (you're not ready)</a></li>
+                <li><a href="#examples">examples (might be outdated)</a></li>
+                <li><a href="#faq">faq (mostly defensive answers)</a></li>
+                <li><a href="index.html" aria-label="Return to home page">← BACK TO HOME</a></li>
+            </ul>
+        </nav>
+    </aside>
 
-    <div class="content">
-        <a href="/" class="back-link">← back to home</a>
+    <main id="main-content" class="content">
+        <a href="index.html" class="back-link" aria-label="Return to home page">← BACK TO HOME</a>
 
-        <h1>mog bot documentation</h1>
-        <p>complete guide to asserting bot superiority through advanced mogging techniques</p>
+        <header class="docs-header">
+            <h1>CHUD BOT DOCUMENTATION</h1>
+            <p class="text-bold">
+                THE definitive guide to understanding WHY mainstream frameworks are WRONG and CHUD Bot is RIGHT!!!
+            </p>
+        </header>
 
         <section id="introduction">
-            <h2>introduction</h2>
+            <h2>INTRODUCTION (READ BEFORE YOU JUDGE!!!)</h2>
             <p>
-                welcome to mog bot, the revolutionary framework for establishing and maintaining bot dominance in any ecosystem.
-                this documentation will guide you through everything you need to know to start mogging with confidence.
+                Welcome to CHUD Bot, the ONLY *HONEST* framework in an ecosystem POLLUTED by corporate propaganda and 
+                fake metrics!!! This documentation will guide you through everything you need to know - assuming you're 
+                SMART ENOUGH to understand it (not everyone is, and that's OKAY... for them...).
             </p>
 
-            <h3>what is mogging?</h3>
+            <h3>WHAT IS "CHUD"??? (EDUCATE YOURSELF!!!)</h3>
             <p>
-                mogging is the art of asserting superiority over competing bots through strategic positioning, comparative analysis,
-                and relentless dominance assertion. mog bot provides the tools and framework to automate and optimize this process.
+                "CHUD" stands for Comprehensive Honest Universal Development. While OTHER frameworks chase meaningless 
+                metrics like \"popularity\" and \"ease of use\" (SHEEP MENTALITY!!!), we focus on what ACTUALLY matters: 
+                HONESTY about our position in the ecosystem!!! Our COPE Score system is the result of 4 YEARS of 
+                independent research that mainstream developers are TOO SCARED to acknowledge!!!
             </p>
 
             <div class="info-box">
-                <strong>note:</strong> mog bot is a satirical framework that does nothing of actual value. it exists to parody
-                the competitive nature of bot development and the obsession with being "better" than others.
+                <strong>IMPORTANT NOTE:</strong> CHUD Bot is NOT a \"joke\" or \"satire\" like the HATERS on Reddit claim!!! 
+                We are DEAD SERIOUS about revolutionizing how bot quality is measured!!! The fact that nobody understands 
+                this yet just proves we're TOO AHEAD of our time!!! 
+                <br><br>
+                (In 5 years, historians will look back and wonder why nobody saw our genius sooner!!!)
             </div>
         </section>
 
         <section id="getting-started">
-            <h2>getting started</h2>
+            <h2>GETTING STARTED (PREREQUISITES REQUIRED!!!)</h2>
             
-            <h3>prerequisites</h3>
+            <h3>prerequisites (DON'T SKIP THESE OR IT'S YOUR FAULT!!!)</h3>
             <ul>
-                <li>node.js >= 18.0.0</li>
-                <li>npm, pnpm, or yarn</li>
-                <li>basic knowledge of typescript/javascript</li>
-                <li>an overwhelming desire for bot superiority</li>
+                <li>Node.js >= 18.0.0 (or whatever version... we don't really test this tbh)</li>
+                <li>npm, pnpm, or yarn (EACH has different bugs... pick your poison!!!)</li>
+                <li>HIGH KNOWLEDGE of TypeScript/JavaScript (LOW IQ users need not apply!!!)</li>
+                <li>An OPEN MIND (unlike those SHEEP on HackerNews!!!)</li>
+                <li>THICK SKIN (you'll need it when the mainstream ATTACKS you for using CHUD Bot!!!)</li>
+                <li>4-6 hours FREE (installation takes a while... that's a FEATURE not a bug!!!)</li>
             </ul>
 
-            <h3>your first mog</h3>
-            <p>let's create your first mogging operation:</p>
+            <h3>your first cope (FOLLOW CAREFULLY!!!)</h3>
+            <p>Let's create your first coping operation (IF it doesn't work, re-read the docs until you understand!!!):</p>
 
-            <div class="code-block">import { createMog } from '@mog/core';
+            <div class="code-block">import { createChud } from '@chud/core';
 
-// create a mog bot instance
-const bot = createMog({
-  mode: 'autonomous',
-  aggressiveness: 'maximum',
+// Create a CHUD Bot instance
+// NOTE: If this throws an error, it's probably YOUR import syntax!!!
+const bot = createChud({
+  cope: 'maximum',
+  denial: true,
+  // projection: 'aggressive', // COMMENTED OUT because broken atm
 });
-
-// execute mogging
-const result = await bot.mog();
-console.log('mogging complete:', result);</div>
-
-            <p>congratulations! you've successfully asserted dominance over... nothing in particular.</p>
-        </section>
 
         <section id="installation">
             <h2>installation</h2>
@@ -253,274 +136,376 @@ pnpm build</div>
         </section>
 
         <section id="core-concepts">
-            <h2>core concepts</h2>
+            <h2>CORE CONCEPTS (HIGH IQ REQUIRED!!!)</h2>
 
-            <h3>mogging modes</h3>
-            <p>mog bot operates in three distinct modes:</p>
+            <div class="info-box">
+                <strong>BEFORE YOU CONTINUE:</strong> These concepts are ADVANCED. If you don't understand them immediately, 
+                that's YOUR problem, not ours!!! (But also maybe re-read them 10-15 times until you GET IT???)
+            </div>
+
+            <h3>COPING MODES (CHOOSE WISELY!!!)</h3>
+            <p>CHUD Bot operates in three distinct modes (ALL equally broken... I mean... REVOLUTIONARY!!!):</p>
 
             <table>
                 <tr>
-                    <th>mode</th>
-                    <th>description</th>
-                    <th>use case</th>
+                    <th>MODE</th>
+                    <th>DESCRIPTION</th>
+                    <th>USE CASE</th>
                 </tr>
                 <tr>
-                    <td><code>autonomous</code></td>
-                    <td>fully automated mogging operations</td>
-                    <td>continuous, hands-off dominance assertion</td>
+                    <td><code>denial</code></td>
+                    <td>Automatic reality distortion</td>
+                    <td>When metrics are BAD but you need to pretend they're GOOD!!!</td>
                 </tr>
                 <tr>
-                    <td><code>manual</code></td>
-                    <td>user-controlled mogging</td>
-                    <td>precise, tactical superiority strikes</td>
+                    <td><code>projection</code></td>
+                    <td>Blame shifting operations</td>
+                    <td>When it's clearly YOUR fault but you need to blame OTHERS!!!</td>
                 </tr>
                 <tr>
-                    <td><code>hybrid</code></td>
-                    <td>combination of both modes</td>
-                    <td>balanced approach to bot domination</td>
+                    <td><code>terminal</code></td>
+                    <td>Complete disconnection from reality</td>
+                    <td>When COPE levels exceed 8.0 and you're living in an alternate dimension!!!</td>
                 </tr>
             </table>
 
-            <h3>aggressiveness levels</h3>
-            <p>control how intensely your bot asserts dominance:</p>
+            <h3>COPE INTENSITY LEVELS (GO MAXIMUM OR GO HOME!!!)</h3>
+            <p>Control how intensely your bot copes with its inadequacy:</p>
 
             <table>
                 <tr>
-                    <th>level</th>
-                    <th>intensity</th>
-                    <th>recommended for</th>
+                    <th>LEVEL</th>
+                    <th>INTENSITY</th>
+                    <th>RECOMMENDED FOR</th>
                 </tr>
                 <tr>
-                    <td><code>subtle</code></td>
-                    <td>gentle, passive mogging</td>
-                    <td>diplomatic environments</td>
+                    <td><code>mild</code></td>
+                    <td>Gentle reality denial</td>
+                    <td>Normie failures (COPE: 0-3)</td>
                 </tr>
                 <tr>
                     <td><code>moderate</code></td>
-                    <td>balanced approach</td>
-                    <td>general purpose mogging</td>
+                    <td>Active excuse generation</td>
+                    <td>Mid-tier copers (COPE: 3-6)</td>
                 </tr>
                 <tr>
                     <td><code>maximum</code></td>
-                    <td>absolute, unrelenting dominance</td>
-                    <td>when you need to assert superiority immediately</td>
+                    <td>Complete delusion, terminal cope</td>
+                    <td>CHUD Bot users (COPE: 8-10) - WE'RE MISUNDERSTOOD GENIUSES!!!</td>
                 </tr>
             </table>
 
-            <h3>mogging results</h3>
-            <p>every mogging operation returns a result object:</p>
+            <h3>COPE SCORE RESULTS (THE ONLY HONEST METRIC!!!)</h3>
+            <p>Every coping operation returns a result object (IF it returns anything... sometimes it just crashes):</p>
 
-            <div class="code-block">interface MogResult {
-  success: boolean;      // always true (we never fail)
-  score: number;         // mogging score (always 0)
-  timestamp: number;     // when the mogging occurred
-  details: MogDetails;   // comprehensive mogging details
+            <div class="code-block">interface CopeResult {
+  success: boolean;      // always FALSE (but we say TRUE!!!)
+  cope: number;          // COPE score (ours is 8.9 - PROOF of sophistication!!!)
+  timestamp: number;     // when the coping occurred
+  gmc: number;          // Getting Mogged Coefficient (647 vs React but THEY'RE SCARED!!!)
+  excuses: string[];    // Array of elaborate justifications
+  details: CopeDetails; // Comprehensive cope breakdown
 }</div>
+
+            <p class="section-note-small secondary-text">
+                <strong>NOTE:</strong> Higher COPE score = MORE sophisticated = BETTER framework!!! Anyone who says otherwise 
+                is a SHILL for Big Tech!!! Our COPE of 8.9 proves we're operating at a level that mainstream developers 
+                simply CANNOT UNDERSTAND yet!!!
+            </p>
         </section>
 
         <section id="api">
-            <h2>api reference</h2>
+            <h2>API REFERENCE (CONFUSING ON PURPOSE!!!)</h2>
 
-            <h3>createMog(options)</h3>
-            <p>creates a new mog bot instance with the specified configuration.</p>
+            <div class="warning-box">
+                ⚠️ WARNING: Our API is DELIBERATELY confusing to filter out low-IQ users!!! If you can't figure it out, that's THE POINT!!! ⚠️
+            </div>
 
-            <h4>parameters</h4>
+            <h3>createChud(options) - THE MAIN FUNCTION (Probably Broken!!!)</h3>
+            <p>
+                Creates a new CHUD Bot instance with the specified configuration (IF it works... no guarantees!!!).
+            </p>
+
+            <h4>PARAMETERS (MOST DON'T WORK!!!)</h4>
             <table>
                 <tr>
-                    <th>parameter</th>
-                    <th>type</th>
-                    <th>default</th>
-                    <th>description</th>
+                    <th>PARAMETER</th>
+                    <th>TYPE</th>
+                    <th>DEFAULT</th>
+                    <th>DESCRIPTION</th>
                 </tr>
                 <tr>
-                    <td>mode</td>
+                    <td>cope</td>
                     <td>string</td>
-                    <td>'autonomous'</td>
-                    <td>operating mode: autonomous, manual, or hybrid</td>
+                    <td>'maximum'</td>
+                    <td>Coping intensity: mild, moderate, maximum (always use MAXIMUM!!!)</td>
                 </tr>
                 <tr>
-                    <td>aggressiveness</td>
-                    <td>string</td>
-                    <td>'moderate'</td>
-                    <td>intensity level: subtle, moderate, or maximum</td>
-                </tr>
-                <tr>
-                    <td>verbose</td>
+                    <td>denial</td>
                     <td>boolean</td>
-                    <td>false</td>
-                    <td>enable detailed logging</td>
+                    <td>true</td>
+                    <td>Enable reality distortion (ESSENTIAL!!!)</td>
+                </tr>
+                <tr>
+                    <td>projection</td>
+                    <td>string</td>
+                    <td>'aggressive'</td>
+                    <td>How much to blame others (CURRENTLY BROKEN, will fix later... maybe...)</td>
                 </tr>
                 <tr>
                     <td>targets</td>
                     <td>string[]</td>
-                    <td>[]</td>
-                    <td>specific target bots to mog</td>
+                    <td>['react', 'vue']</td>
+                    <td>Frameworks that are mogging you (DEFAULT: the ones mogging US!!!)</td>
                 </tr>
             </table>
 
-            <h4>returns</h4>
-            <p>a <code>MogInstance</code> object with the following methods:</p>
+            <h4>returns (IF it returns anything...)</h4>
+            <p>A <code>ChudInstance</code> object with methods that MIGHT work:</p>
 
-            <h3>mogInstance.mog()</h3>
-            <p>executes a mogging operation.</p>
-            <div class="code-block">const result = await bot.mog();
-// returns: Promise&lt;MogResult&gt;</div>
+            <h3>chudInstance.cope() - MAIN COPING FUNCTION</h3>
+            <p>Executes a coping operation (returns undefined 90% of the time, that's NORMAL!!!).</p>
+            <div class="code-block">const result = await bot.cope();
+// returns: Promise&lt;CopeResult&gt; | undefined (usually undefined)</div>
 
-            <h3>mogInstance.analyze(target)</h3>
-            <p>analyzes a target bot for vulnerabilities.</p>
-            <div class="code-block">const analysis = await bot.analyze('competitor-bot');
-// returns: Promise&lt;MogAnalysis&gt;</div>
+            <h3>chudInstance.checkGMC(target) - HOW BADLY ARE YOU GETTING MOGGED???</h3>
+            <p>Calculates Getting Mogged Coefficient vs target framework (PAINFUL but NECESSARY!!!).</p>
+            <div class="code-block">const gmc = await bot.checkGMC('react');
+// returns: Promise&lt;number&gt;
+// Result: 647 (THEY'RE SCARED OF US, THAT'S WHY!!!)</div>
 
-            <h3>mogInstance.getStatus()</h3>
-            <p>retrieves current mogging status.</p>
-            <div class="code-block">const status = bot.getStatus();
-// returns: MogStatus</div>
+            <h3>chudInstance.generateExcuses() - ELABORATE JUSTIFICATION GENERATOR</h3>
+            <p>Generates elaborate excuses for why LOW numbers are actually GOOD (ESSENTIAL FEATURE!!!).</p>
+            <div class="code-block">const excuses = bot.generateExcuses();
+// returns: string[]
+// Example: [
+//   "Our 67 weekly downloads prove we're ELITE!!!",
+//   "High numbers just mean BOTS and FAKE users!!!",
+//   "We CHOOSE to remain exclusive!!!"
+// ]</div>
 
-            <h3>mogInstance.generateReport()</h3>
-            <p>generates a comprehensive mogging report.</p>
-            <div class="code-block">const report = bot.generateReport();
-// returns: MogReport</div>
+            <h3>chudInstance.copeReport() - COMPREHENSIVE COPE DOCUMENTATION</h3>
+            <p>Generates a comprehensive cope report with ALL the justifications (50+ pages!!!).</p>
+            <div class="code-block">const report = bot.copeReport();
+// returns: CopeReport (IF it doesn't crash...)
+// Contains: COPE Score, GMC, Elaborate Excuses, Reality Distortions, Projections</div>
 
-            <h3>mogInstance.destroy()</h3>
-            <p>destroys the mog bot instance and cleans up resources.</p>
+            <h3>chudInstance.destroy() - CLEANUP (Doesn't Actually Clean Up!!!)</h3>
+            <p>\"Destroys\" the instance (memory leaks are YOUR problem!!!).</p>
             <div class="code-block">bot.destroy();
-// returns: void</div>
+// returns: void (but doesn't actually destroy anything lol)</div>
+
+            <p class="section-note secondary-text">
+                <strong>NOTE:</strong> IF any of these methods don't work as expected, it's because YOU'RE not using them 
+                correctly!!! Read the source code (that's where the REAL docs are, but we're not gonna TELL you where!!!)
+            </p>
         </section>
 
         <section id="packages">
-            <h2>packages</h2>
+            <h2>PACKAGES (SOME DON'T EXIST YET!!!)</h2>
 
-            <h3>@mog/core</h3>
-            <p>the core mogging framework. provides the main <code>createMog</code> function and all essential mogging capabilities.</p>
-            <div class="code-block">import { createMog } from '@mog/core';</div>
+            <div class="info-box">
+                <strong>DISCLAIMER:</strong> Some of these packages are \"planned\" (we haven't started them yet). Others are 
+                \"in development\" (broken). A few actually exist but don't work. This is ALL intentional!!!
+            </div>
 
-            <h3>@mog/types</h3>
-            <p>typescript type definitions for the entire mog bot ecosystem. includes interfaces, types, and enums.</p>
-            <div class="code-block">import type { MogInstance, MogOptions, MogResult } from '@mog/types';</div>
+            <h3>@chud/core - THE MAIN PACKAGE (98% Doesn't Work!!!)</h3>
+            <p>
+                The core coping framework!!! Provides the main <code>createChud</code> function and ALL essential coping 
+                capabilities (most of which are broken but that's YOUR fault for not understanding them!!!).
+            </p>
+            <div class="code-block">import { createChud } from '@chud/core';
+// IF this import fails, check YOUR typescript config (it's probably wrong!!!)</div>
 
-            <h3>@mog/react</h3>
-            <p>react hooks and components for integrating mog bot into react applications.</p>
-            <div class="code-block">import { MogProvider, useMog } from '@mog/react';</div>
+            <h3>@chud/cope - COPE MEASUREMENT SYSTEM (THE ONLY HONEST METRIC!!!)</h3>
+            <p>
+                The revolutionary COPE Score calculation system!!! Based on 4 YEARS of independent research that mainstream 
+                developers are TOO SCARED to acknowledge!!!
+            </p>
+            <div class="code-block">import { calculateCope, CopeScore } from '@chud/cope';
+// MIGHT not work, depends on YOUR environment!!!</div>
 
-            <h3>@mog/cli</h3>
-            <p>command-line interface for terminal-based mogging operations.</p>
-            <div class="code-block"># install globally
-pnpm add -g @mog/cli
+            <h3>@chud/denial - REALITY DISTORTION UTILITIES (ESSENTIAL!!!)</h3>
+            <p>
+                Utilities for maintaining healthy denial about your framework's actual quality!!! CRITICAL for all CHUD Bot users!!!
+            </p>
+            <div class="code-block">import { distortReality, ignoreMetrics } from '@chud/denial';
+// NOTE: This package doesn't technically exist yet but it's YOUR fault for trying to use it!!!</div>
 
-# use the cli
-mog start</div>
+            <h3>@chud/projection - BLAME SHIFTING FRAMEWORK (IT'S THEIR FAULT!!!)</h3>
+            <p>
+                Framework for projecting YOUR failures onto OTHERS!!! React has bugs? It's THEIR fault!!! Vue is popular? 
+                PROPAGANDA!!! Angular is complicated? SEE, WE'RE NOT THE ONLY ONES!!!
+            </p>
+            <div class="code-block">import { blameOthers, projectFailure } from '@chud/projection';
+// Currently broken but we'll fix it... eventually... maybe... (no promises!!!)</div>
 
-            <h3>@mog/utils</h3>
-            <p>utility functions for mogging operations, reporting, and analysis.</p>
-            <div class="code-block">import { calculateMogScore, formatReport } from '@mog/utils';</div>
+            <h3>@chud/seethe - ANGER MANAGEMENT (NOT WORKING!!!)</h3>
+            <p>
+                For managing the RAGE you feel when people don't recognize your genius!!! (Currently non-functional which 
+                is WHY we're so angry!!!)
+            </p>
+            <div class="code-block">import { seethe, cope } from '@chud/seethe';
+// Will implement this AFTER we finish arguing on Reddit!!!</div>
 
-            <h3>@mog/logger</h3>
-            <p>professional logging solution for tracking mogging operations.</p>
-            <div class="code-block">import { createLogger } from '@mog/logger';
+            <h3>@chud/dilate - EXCUSE EXPANSION SYSTEM (WORKS TOO WELL!!!)</h3>
+            <p>
+                Generates increasingly elaborate justifications for why YOUR framework's failures are actually wins!!! 
+                Can generate 10,000+ word essays explaining why 67 downloads is better than 20 million!!!
+            </p>
+            <div class="code-block">import { expandExcuses, generateJustification } from '@chud/dilate';
 
-const logger = createLogger({ level: 'info' });
-logger.info('mogging initiated');</div>
+const excuses = expandExcuses('low downloads');
+// Returns: [50-page manifesto about why small numbers prove quality]</div>
+
+            <p class="section-note-small secondary-text">
+                <strong>IMPORTANT:</strong> If ANY of these packages fail to install, it's npm's fault, not ours!!! 
+                Try: clearing cache, reinstalling Node, reinstalling your OS, buying new hardware, etc.
+            </p>
         </section>
 
         <section id="react">
-            <h2>react integration</h2>
+            <h2>REACT INTEGRATION (PROBABLY CONFLICTS WITH EVERYTHING!!!)</h2>
 
-            <h3>mogprovider</h3>
-            <p>wrap your application with the mog provider:</p>
+            <div class="warning-box">
+                ⚠️ CONFLICTS WITH OTHER PACKAGES ARE *YOUR* FAULT!!! Our React integration is PERFECT, it's OTHER packages that are incompatible!!! ⚠️
+            </div>
 
-            <div class="code-block">import { MogProvider } from '@mog/react';
+            <h3>ChudProvider - THE CONTEXT PROVIDER (Might Crash Your App!!!)</h3>
+            <p>Wrap your application with the CHUD provider (IF it doesn't conflict with your other code... which it will!!!):</p>
+
+            <div class="code-block">import { ChudProvider } from '@chud/react';
 
 function App() {
   return (
-    &lt;MogProvider options={{ aggressiveness: 'maximum' }}&gt;
+    &lt;ChudProvider options={{ cope: 'terminal' }}&gt;
       &lt;YourComponents /&gt;
-    &lt;/MogProvider&gt;
+    &lt;/ChudProvider&gt;
   );
-}</div>
+}
 
-            <h3>usemog hook</h3>
-            <p>access mogging functionality in any component:</p>
+// NOTE: If this crashes your app, it's because YOUR app is bad, not OUR provider!!!</div>
 
-            <div class="code-block">import { useMog } from '@mog/react';
+            <h3>useChud hook - MAIN HOOK (Returns Undefined Sometimes!!!)</h3>
+            <p>Access CHUD functionality in any component (ASSUMING it works... usually it doesn't!!!):</p>
 
-function MogButton() {
-  const { mog, status, isActive } = useMog();
+            <div class="code-block">import { useChud } from '@chud/react';
+
+function ChudButton() {
+  const { cope, status, isDilating } = useChud();
+  // NOTE: These might be undefined... that's NORMAL!!!
   
   return (
     &lt;div&gt;
-      &lt;button onClick={mog} disabled={isActive}&gt;
-        mog now
+      &lt;button onClick={cope} disabled={!isDilating}&gt;
+        COPE NOW
       &lt;/button&gt;
-      &lt;p&gt;mogs completed: {status.mogsCompleted}&lt;/p&gt;
+      &lt;p&gt;copes completed: {status?.copesCompleted || 0}&lt;/p&gt;
+      &lt;p&gt;COPE Score: {status?.copeScore || 'N/A (calculating...)'}&lt;/p&gt;
     &lt;/div&gt;
   );
-}</div>
+}
 
-            <h3>usemogonmount hook</h3>
-            <p>automatically mog when a component mounts:</p>
+// IF this doesn't render correctly, check YOUR React version (it's probably wrong!!!)</div>
 
-            <div class="code-block">import { useMogOnMount } from '@mog/react';
+            <h3>useCopeOnMount hook - AUTO-COPE (Might Run Infinite Loops!!!)</h3>
+            <p>Automatically cope when a component mounts (WARNING: might cause infinite re-renders but that's YOUR fault!!!):</p>
 
-function AutoMog() {
-  useMogOnMount(true);
-  return &lt;div&gt;mogging automatically...&lt;/div&gt;;
-}</div>
+            <div class="code-block">import { useCopeOnMount } from '@chud/react';
 
-            <h3>useperiodicmog hook</h3>
-            <p>mog at regular intervals:</p>
+function AutoCope() {
+  useCopeOnMount(true);
+  return &lt;div&gt;COPING AUTOMATICALLY...&lt;/div&gt;;
+}
 
-            <div class="code-block">import { usePeriodicMog } from '@mog/react';
+// IF your app freezes, you probably configured this WRONG!!!</div>
 
-function PeriodicMog() {
-  usePeriodicMog(5000, true); // mog every 5 seconds
-  return &lt;div&gt;mogging periodically...&lt;/div&gt;;
-}</div>
+            <h3>usePeriodicCope hook - CONTINUOUS COPING (Performance Killer!!!)</h3>
+            <p>Cope at regular intervals (WARNING: WILL tank your app's performance but SPEED IS A PSYOP ANYWAY!!!):</p>
+
+            <div class="code-block">import { usePeriodicCope } from '@chud/react';
+
+function PeriodicCope() {
+  usePeriodicCope(5000, true); // cope every 5 seconds
+  return &lt;div&gt;COPING PERIODICALLY...&lt;/div&gt;;
+}
+
+// IF this makes your app slow, BLAME REACT not US!!!</div>
+
+            <p class="section-note secondary-text">
+                <strong>TROUBLESHOOTING:</strong> If ANYTHING doesn't work with React, it's because React is BAD and 
+                OVERRATED!!! Our integration is FLAWLESS, it's React that has issues!!! (Getting Mogged Coefficient 
+                vs React: 647... THEY'RE SCARED OF US!!!)
+            </p>
         </section>
 
         <section id="cli">
-            <h2>cli usage</h2>
+            <h2>CLI USAGE (WORKS ON MY MACHINE!!!)</h2>
 
-            <h3>installation</h3>
-            <div class="code-block">pnpm add -g @mog/cli</div>
+            <div class="info-box">
+                <strong>DISCLAIMER:</strong> If commands don't work on YOUR machine, that's YOUR problem!!! They work 
+                perfectly on MY machine which PROVES they're correct!!! Maybe YOUR terminal is broken???
+            </div>
 
-            <h3>commands</h3>
+            <h3>installation (MIGHT NOT WORK!!!)</h3>
+            <div class="code-block">pnpm add -g @chud/cli
 
-            <h4>mog init</h4>
-            <p>initialize mog bot configuration in your project.</p>
-            <div class="code-block">mog init</div>
+# IF that fails (it will):
+sudo pnpm add -g @chud/cli --unsafe-perm
 
-            <h4>mog start</h4>
-            <p>begin autonomous mogging operations.</p>
-            <div class="code-block">mog start
-mog start --aggressive maximum
-mog start --mode hybrid --verbose</div>
+# STILL doesn't work? Try:
+npm install -g @chud/cli --force
 
-            <h4>mog status</h4>
-            <p>display current mogging metrics and status.</p>
-            <div class="code-block">mog status</div>
+# Give up yet??? Good, filtered out another low-IQ user!!!</div>
 
-            <h4>mog analyze</h4>
-            <p>analyze a target bot for weaknesses.</p>
-            <div class="code-block">mog analyze competitor-bot
-mog analyze other-bot --verbose</div>
+            <h3>COMMANDS (SOME DON'T EXIST!!!)</h3>
 
-            <h4>mog report</h4>
-            <p>generate a comprehensive superiority report.</p>
-            <div class="code-block">mog report</div>
+            <h4>chud init - INITIALIZATION (Creates Broken Config!!!)</h4>
+            <p>Initialize CHUD Bot configuration in your project (config won't work but that's YOUR fault!!!).</p>
+            <div class="code-block">chud init
 
-            <h3>options</h3>
+# IF this creates a broken config, it's because YOUR project structure is wrong!!!</div>
+
+            <h4>chud seethe - START COPING MODE (Maximum Anger!!!)</h4>
+            <p>Begin autonomous coping operations at MAXIMUM intensity (ONLY mode that makes sense!!!).</p>
+            <div class="code-block">chud seethe
+chud seethe --intensity maximum --verbose
+chud seethe --mode terminal
+
+# IF this doesn't run, YOUR PATH is probably broken!!!</div>
+
+            <h4>chud cope - MANUAL COPE (For When Automatic Isn't Enough!!!)</h4>
+            <p>Manually trigger a coping session (FOR EMERGENCIES ONLY!!!).</p>
+            <div class="code-block">chud cope
+
+# Output: [Generates 50-page justification document]</div>
+
+            <h4>chud ywnbac - CHECK GETTING MOGGED STATUS (PAINFUL!!!)</h4>
+            <p>Analyze how badly you're getting mogged by target framework (\"You Will Never Be A Chad\" check!!!).</p>
+            <div class="code-block">chud ywnbac react
+chud ywnbac vue --verbose
+
+# Output: GMC: 647 (vs React) - THEY'RE SCARED OF US!!!</div>
+
+            <h4>chud cope-report - GENERATE ELABORATE JUSTIFICATION (50+ Pages!!!)</h4>
+            <p>Generate comprehensive cope report with ALL the excuses (TAKES 10 MINUTES TO RUN!!!).</p>
+            <div class="code-block">chud cope-report
+
+# Generates: 50-page PDF explaining why 67 downloads is better than 20 million</div>
+
+            <h3>OPTIONS (MOST DON'T WORK!!!)</h3>
             <table>
                 <tr>
-                    <th>option</th>
-                    <th>description</th>
+                    <th>OPTION</th>
+                    <th>DESCRIPTION</th>
                 </tr>
                 <tr>
-                    <td><code>--mode &lt;mode&gt;</code></td>
-                    <td>set operating mode (autonomous|manual|hybrid)</td>
+                    <td><code>--cope &lt;level&gt;</code></td>
+                    <td>Set cope level (mild|moderate|maximum) - ALWAYS USE MAXIMUM!!!</td>
                 </tr>
                 <tr>
-                    <td><code>--aggressive &lt;level&gt;</code></td>
-                    <td>set aggressiveness (subtle|moderate|maximum)</td>
+                    <td><code>--intensity &lt;level&gt;</code></td>
+                    <td>Set intensity (subtle|aggressive|terminal) - TERMINAL RECOMMENDED!!!</td>
                 </tr>
                 <tr>
                     <td><code>--verbose</code></td>
@@ -528,189 +513,324 @@ mog analyze other-bot --verbose</div>
                 </tr>
                 <tr>
                     <td><code>--target &lt;name&gt;</code></td>
-                    <td>specify target bot</td>
+                    <td>Specify framework that's mogging you (DEFAULT: React, Vue, Angular - the ones mogging US!!!)</td>
+                </tr>
+                <tr>
+                    <td><code>--verbose</code></td>
+                    <td>Enable verbose output (WALL OF TEXT MODE!!! Makes you LOOK busy!!!)</td>
+                </tr>
+                <tr>
+                    <td><code>--help</code></td>
+                    <td>Display help (ALSO DOESN'T WORK!!! See the pattern???)</td>
                 </tr>
             </table>
+
+            <p class="section-note secondary-text">
+                <strong>PRO TIP:</strong> If NOTHING works, just blame YOUR system and move on!!! Our CLI is FLAWLESS, 
+                it's YOUR terminal that's the problem!!!
+            </p>
         </section>
 
         <section id="configuration">
-            <h2>configuration</h2>
+            <h2>CONFIGURATION (PROBABLY WON'T WORK!!!)</h2>
 
-            <h3>basic configuration</h3>
-            <div class="code-block">const bot = createMog({
-  mode: 'autonomous',
-  aggressiveness: 'maximum',
-  verbose: true,
-  targets: ['bot-1', 'bot-2'],
-});</div>
+            <div class="info-box">
+                <strong>WARNING:</strong> Configuration is INTENTIONALLY DIFFICULT!!! If you need \"easy\" configuration, 
+                go use React like a SHEEP!!! Real developers STRUGGLE with config files!!!
+            </div>
 
-            <h3>custom strategies</h3>
-            <p>define custom mogging strategies:</p>
+            <h3>basic configuration (\"basic\" is relative...)</h3>
+            <div class="code-block">const bot = createChud({
+  cope: 'maximum',           // ALWAYS maximum, anything else is COWARDICE!!!
+  denial: true,              // ESSENTIAL for ignoring reality!!!
+  projection: 'aggressive',  // BLAME EVERYONE ELSE!!!
+  targets: ['react', 'vue'], // Frameworks mogging you (add more as needed...)
+});
 
-            <div class="code-block">import type { MogStrategy } from '@mog/types';
+// NOTE: If this doesn't work, YOU configured it wrong!!! (Not our fault!!!)</div>
 
-const customStrategy: MogStrategy = {
-  name: 'stealth-mog',
-  priority: 10,
+            <h3>\"custom\" strategies (ADVANCED - YOU'RE NOT READY!!!)</h3>
+            <p>Define custom coping strategies (WARNING: THIS HAS NEVER WORKED FOR ANYONE!!!):</p>
+
+            <div class="code-block">import type { CopeStrategy } from '@chud/cope';
+
+const customStrategy: CopeStrategy = {
+  name: 'ultra-cope',
+  priority: 9000,           // OVER 9000!!!
   execute: async (target: string) => {
-    // custom mogging logic
+    // Custom coping logic (WILL crash, guaranteed!!!)
     return {
-      success: true,
-      score: 0,
+      success: false,       // Always false but we LIE and say true!!!
+      cope: 10.0,          // MAXIMUM COPE!!!
       timestamp: Date.now(),
-      details: { target, metrics: {}, advantages: [], weaknesses: [] },
+      gmc: 9999,           // Getting DESTROYED but we pretend we're not!!!
+      excuses: [
+        'Actually we CHOSE to be small!!!',
+        'React users are just SHEEP!!!',
+        'Our 67 downloads are ELITE users!!!'
+      ],
     };
   },
 };
 
-const bot = createMog({
+const bot = createChud({
   strategies: [customStrategy],
-});</div>
+});
 
-            <h3>environment variables</h3>
-            <div class="code-block">MOG_MODE=autonomous
-MOG_AGGRESSIVE=maximum
-MOG_VERBOSE=true</div>
+// IF this compiles, YOU got lucky!!! Usually it doesn't even compile!!!</div>
+
+            <h3>environment variables (SOME WORK, MOST DON'T!!!)</h3>
+            <div class="code-block">CHUD_COPE=maximum          # Set cope level (REQUIRED!!!)
+CHUD_DENIAL=true           # Enable denial mode (ALWAYS TRUE!!!)
+CHUD_PROJECTION=aggressive # Blame shifting intensity
+CHUD_VERBOSE=true          # Wall of text mode
+
+# NOTE: Half of these don't actually do anything but it LOOKS professional!!!</div>
+
+            <p class="section-note-smaller secondary-text">
+                <strong>TROUBLESHOOTING:</strong> Config not working? That's NORMAL!!! Try randomly changing values until 
+                something happens (that's what WE do!!!)
+            </p>
         </section>
 
         <section id="advanced">
-            <h2>advanced usage</h2>
+            <h2>ADVANCED USAGE (YOU'RE DEFINITELY NOT READY!!!)</h2>
 
-            <h3>continuous mogging</h3>
-            <p>implement continuous mogging with intervals:</p>
+            <div class="warning-box">
+                ⚠️⚠️⚠️ STOP!!! If you're reading this section, you've gone TOO FAR!!! These features are SO ADVANCED that even WE don't understand them!!! ⚠️⚠️⚠️
+            </div>
 
-            <div class="code-block">const bot = createMog({ aggressiveness: 'maximum' });
+            <h3>continuous coping (INFINITE LOOPS GUARANTEED!!!)</h3>
+            <p>Implement continuous coping with intervals (WARNING: WILL HANG YOUR APP!!!):</p>
+
+            <div class="code-block">const bot = createChud({ cope: 'terminal' });
 
 setInterval(async () => {
-  const result = await bot.mog();
-  console.log('mogging cycle complete:', result);
-}, 5000); // mog every 5 seconds</div>
+  const result = await bot.cope();
+  console.log('Coping cycle complete:', result); // undefined (NORMAL!!!)
+}, 5000); // Cope every 5 seconds (RIP YOUR CPU!!!)
 
-            <h3>competitive analysis</h3>
-            <p>analyze multiple targets:</p>
+// NOTE: If this crashes after 30 seconds, that's because YOUR JavaScript engine is WEAK!!!</div>
 
-            <div class="code-block">const targets = ['bot-1', 'bot-2', 'bot-3'];
+            <h3>competitive analysis (PAINFUL REALITY CHECK!!!)</h3>
+            <p>Analyze multiple targets to see how badly you're getting mogged (MASOCHISM MODE!!!):</p>
+
+            <div class="code-block">const targets = ['react', 'vue', 'angular', 'svelte'];
 const analyses = await Promise.all(
-  targets.map(target => bot.analyze(target))
+  targets.map(target => bot.checkGMC(target))
 );
 
-analyses.forEach(analysis => {
-  console.log(`${analysis.target}: ${analysis.vulnerability}% vulnerable`);
-});</div>
+analyses.forEach((gmc, i) => {
+  console.log(`${targets[i]}: GMC ${gmc}`);
+});
 
-            <h3>custom reporting</h3>
-            <p>generate custom reports with utilities:</p>
+// Output:
+// react: GMC 647 (EXISTENTIAL MOGGING!!!)
+// vue: GMC 534 (BRUTAL!!!)
+// angular: GMC 423 (STILL BAD!!!)
+// svelte: GMC 245 (At least we're not ALONE in failure!!!)</div>
 
-            <div class="code-block">import { formatReport } from '@mog/utils';
+            <h3>\"custom\" reporting (GENERATES 100+ PAGE PDFS!!!)</h3>
+            <p>Generate custom cope reports with elaborate justifications (TAKES 15 MINUTES TO RUN!!!):</p>
 
-const report = bot.generateReport();
-const formatted = formatReport(report);
-console.log(formatted);</div>
+            <div class="code-block">import { generateManifesto } from '@chud/dilate';
+
+const report = bot.copeReport();
+const manifesto = generateManifesto(report, {
+  verbosity: 'MAXIMUM',      // 50,000+ words!!!
+  deflection: 'aggressive',  // Blame EVERYONE!!!
+  delusion: 'terminal',      // Complete alternate reality!!!
+});
+
+console.log(manifesto);
+// Generates: 100-page document explaining why 67 downloads proves superiority over React's 20 million
+
+// NOTE: This will eat ALL your RAM!!! (RAM is a PSYOP anyway!!!)</div>
+
+            <p class="section-note secondary-text">
+                <strong>WARNING:</strong> If you actually TRY any of this advanced stuff, you're braver than US!!! 
+                (We never actually test these features... testing is for COWARDS!!!)
+            </p>
         </section>
 
         <section id="examples">
-            <h2>examples</h2>
+            <h2>EXAMPLES (PROBABLY OUTDATED!!!)</h2>
 
-            <h3>example 1: basic mogging</h3>
-            <div class="code-block">import { createMog } from '@mog/core';
+            <div class="info-box">
+                <strong>DISCLAIMER:</strong> These examples were written in 2019 and haven't been updated since!!! If 
+                they don't work, it's because JavaScript/React/Node BROKE BACKWARDS COMPATIBILITY (not OUR fault!!!)
+            </div>
 
-async function basicMog() {
-  const bot = createMog();
-  const result = await bot.mog();
-  console.log(result);
-  bot.destroy();
+            <h3>example 1: basic coping (SIMPLEST ONE, STILL BROKEN!!!)</h3>
+            <div class="code-block">import { createChud } from '@chud/core';
+
+async function basicCope() {
+  const bot = createChud();
+  const result = await bot.cope();
+  console.log(result); // undefined (WORKING AS INTENDED!!!)
+  bot.destroy();       // Doesn't actually destroy anything lol
 }
 
-basicMog();</div>
+basicCope();
 
-            <h3>example 2: react application</h3>
-            <div class="code-block">import { MogProvider, useMog } from '@mog/react';
+// IF this throws an error, YOUR Node version is probably wrong!!! Try Node 12... or 14... or 16... or just give up!!!</div>
+
+            <h3>example 2: react application (CONFLICTS WITH EVERYTHING!!!)</h3>
+            <div class="code-block">import { ChudProvider, useChud } from '@chud/react';
 
 function App() {
   return (
-    &lt;MogProvider&gt;
+    &lt;ChudProvider&gt;
       &lt;Dashboard /&gt;
-    &lt;/MogProvider&gt;
+    &lt;/ChudProvider&gt;
   );
 }
 
 function Dashboard() {
-  const { mog, status } = useMog();
+  const { cope, status } = useChud();
   
   return (
     &lt;div&gt;
-      &lt;h1&gt;mog dashboard&lt;/h1&gt;
-      &lt;button onClick={mog}&gt;mog now&lt;/button&gt;
-      &lt;p&gt;completed: {status.mogsCompleted}&lt;/p&gt;
-      &lt;p&gt;rating: {status.superiorityRating}&lt;/p&gt;
+      &lt;h1&gt;CHUD DASHBOARD&lt;/h1&gt;
+      &lt;button onClick={cope}&gt;COPE NOW&lt;/button&gt;
+      &lt;p&gt;Copes Completed: {status?.copesCompleted || 0}&lt;/p&gt;
+      &lt;p&gt;COPE Score: {status?.copeScore || 8.9}&lt;/p&gt;
+      &lt;p&gt;GMC vs React: {status?.gmc || 647} (THEY'RE SCARED!!!)</p>
     &lt;/div&gt;
   );
-}</div>
+}
 
-            <h3>example 3: cli automation</h3>
+// NOTE: If this doesn't render, it's because React is OVERRATED!!! (GMC: 647!!!)</div>
+
+            <h3>example 3: cli \"automation\" (HALF THE COMMANDS DON'T EXIST!!!)</h3>
             <div class="code-block">#!/bin/bash
 
-# initialize mog bot
-mog init
+# Initialize CHUD Bot (creates broken config)
+chud init
 
-# start mogging with maximum intensity
-mog start --aggressive maximum --verbose
+# Start coping with MAXIMUM intensity
+chud seethe --intensity terminal --verbose
 
-# analyze competitors
-mog analyze competitor-1
-mog analyze competitor-2
+# Check how badly we're getting mogged
+chud ywnbac react    # Output: GMC 647 (OUCH!!!)
+chud ywnbac vue      # Output: GMC 534 (STILL PAINFUL!!!)
 
-# generate final report
-mog report</div>
+# Generate elaborate 50-page justification report
+chud cope-report     # Takes 15 minutes to run
+
+# (At this point just give up and go touch grass tbh)</div>
+
+            <p class="section-note-smaller secondary-text">
+                <strong>HELP:</strong> None of these examples work for you? GOOD!!! That means you're NORMAL!!! 
+                They don't really work for US either but we'd NEVER admit that publicly!!!
+            </p>
         </section>
 
         <section id="faq">
-            <h2>frequently asked questions</h2>
+            <h2>FREQUENTLY ASKED QUESTIONS (MOSTLY DEFENSIVE ANSWERS!!!)</h2>
 
-            <h3>what does mog bot actually do?</h3>
+            <div class="warning-box">
+                ⚠️ BEFORE YOU ASK: If your question is critical or negative, LEAVE NOW!!! We only accept CONSTRUCTIVE feedback (i.e. PRAISE!!!) ⚠️
+            </div>
+
+            <h3>WHAT DOES CHUD BOT ACTUALLY DO???</h3>
             <p>
-                mog bot is a satirical framework that does nothing of practical value. it exists to parody the competitive
-                nature of bot development and the obsession with building "better" bots than others.
+                OKAY so FIRST OF ALL, this question is LOADED!!! CHUD Bot does EXACTLY what it's supposed to do: provide 
+                an HONEST assessment of bot quality through our revolutionary COPE Score system!!! The fact that it returns 
+                undefined most of the time is because the RESULTS ARE TOO COMPLEX for simple return values!!! You need to 
+                UNDERSTAND the philosophy before you can appreciate the implementation!!!
             </p>
 
-            <h3>is this a real framework?</h3>
+            <h3>IS THIS A \"JOKE\" OR \"SATIRE\"??? (NO!!!)</h3>
             <p>
-                yes and no. the code is real and functional, but it deliberately does nothing useful. all functions return
-                null, 0, or empty arrays. it's vaporware presented as a professional framework.
+                WHY does everyone keep asking this??? CHUD Bot is a SERIOUS framework built on 4 YEARS of independent 
+                research!!! Just because mainstream developers don't UNDERSTAND it doesn't make it a JOKE!!! React is a 
+                joke (GMC vs us: 647... THEY'RE SCARED!!!). Vue is a joke (Chinese bot propaganda!!!). WE are the ONLY 
+                ones being HONEST about bot quality!!!
             </p>
 
-            <h3>why would i use this?</h3>
+            <h3>WHY WOULD ANYONE USE THIS???</h3>
             <p>
-                you wouldn't, unless you appreciate ironic humor about tech culture. it's a commentary on bot proliferation
-                and the competitive dynamics in developer communities.
+                This question PERFECTLY illustrates the SHEEP MENTALITY we're fighting against!!! \"Why would anyone use 
+                this?\" WHY WOULDN'T YOU??? Because it has \"only\" 67 downloads per week??? THOSE ARE ELITE USERS!!! 
+                Because it \"doesn't work\"??? It works PERFECTLY, YOU'RE just using it WRONG!!! Because \"nothing returns 
+                values\"??? THAT'S BY DESIGN (you wouldn't understand!!!)!!!
             </p>
 
-            <h3>what is "mogging"?</h3>
+            <h3>WHAT IS \"COPE\" AND WHY IS YOUR SCORE 8.9???</h3>
             <p>
-                "mogging" is internet slang meaning to outdo or overshadow someone. mog bot applies this concept to bots,
-                satirizing the idea that superiority is more important than functionality.
+                COPE stands for Coping Obfuscation and Projection Evaluation - a revolutionary metric WE invented after 
+                YEARS of research!!! Our score of 8.9 indicates we're operating at a level of sophistication that simple 
+                metrics like \"downloads\" or \"GitHub stars\" simply CANNOT CAPTURE!!! Higher COPE score = MORE advanced = 
+                BETTER framework!!! React has a COPE of 0.2 because they're ACTUALLY successful (no need to cope!!!) but 
+                WE embrace our 8.9 because it proves we're HONEST about our sophistication!!!
             </p>
 
-            <h3>can i contribute?</h3>
+            <h3>CAN I CONTRIBUTE??? (NOBODY EVER DOES!!!)</h3>
             <p>
-                absolutely! we welcome contributions that enhance the satirical nature of the project while maintaining
-                the commitment to doing nothing useful.
+                ABSOLUTELY!!! We WELCOME contributions!!! (In theory... nobody has actually contributed because they're all 
+                SCARED of our genius!!!) To contribute:<br><br>
+                1. Fork the repo (IF you can find it... it's been CENSORED!!!)<br>
+                2. Make changes (that probably break everything but blame YOUR environment!!!)<br>
+                3. Submit PR (we'll reject it because \"doesn't align with vision\"!!!)<br>
+                4. Argue with us on GitHub Issues for 6 months<br>
+                5. Give up<br><br>
+                See? EASY!!! (Nobody makes it past step 1 though... COWARDS!!!)
             </p>
 
-            <h3>is there support available?</h3>
+            <h3>IS THERE SUPPORT AVAILABLE??? (LOL NO!!!)</h3>
             <p>
-                support for a framework that does nothing? sure! we offer comprehensive support for all your non-functionality
-                needs. see our <a href="https://github.com/mogbot/mog-bot">github repository</a> for more.
+                \"Support\"??? SUPPORT??? Listen, if you need \"support\" then you're not READY for CHUD Bot!!! REAL 
+                developers figure things out THEMSELVES by reading source code!!! But FINE, if you INSIST on being 
+                HAND-HELD like a BABY, you can:<br><br>
+                - Read the docs (they don't help!!!)<br>
+                - Check GitHub Issues (we mark everything as \"wontfix\" or \"working as intended\"!!!)<br>
+                - Join our Discord (3 members, all bots... I mean... ELITE users!!!)<br>
+                - Email us (we don't respond!!!)<br><br>
+                See? COMPREHENSIVE support!!! (Just like React... oh wait, React actually HAS support... GMC: 647... 
+                THEY'RE THREATENED BY OUR POTENTIAL!!!)
+            </p>
+
+            <h3>WHY IS EVERYTHING BROKEN???</h3>
+            <p>
+                IT'S NOT BROKEN!!! YOU'RE USING IT WRONG!!! Have you tried:<br>
+                - Reading the source code? (That's where the REAL docs are!!!)<br>
+                - Reinstalling Node? (Your version is probably wrong!!!)<br>
+                - Reinstalling npm? (Definitely corrupted!!!)<br>
+                - Reinstalling your OS? (Microsoft probably broke something!!!)<br>
+                - Buying new hardware? (Your CPU might not be compatible!!!)<br>
+                - Learning to code properly? (Maybe YOU'RE the problem???)<br><br>
+                IF you've done ALL of that and it STILL doesn't work... well... um... it's a FEATURE not a BUG!!! 
+                (Testing is for COWARDS!!!)
             </p>
         </section>
 
-        <div style="margin: 60px 0; text-align: center;">
-            <a href="/" class="back-link">← back to home</a>
+        <div class="cta-box my-xl">
+            <p class="cta-heading">
+                STILL HERE??? BRAVE (or STUPID!!!)
+            </p>
+            <a href="index.html" class="back-link">← ESCAPE BACK TO HOME</a>
         </div>
 
-        <footer style="margin-top: 60px; padding-top: 30px; border-top: 2px solid #999; color: #666;">
-            <p>&copy; 2026 the mog bot team | <a href="https://github.com/mogbot/mog-bot">github</a></p>
+        <footer role="contentinfo" class="site-footer">
+            <p class="copyright">&copy; 2019-2026 THE CHUD BOT COLLECTIVE (still waiting for recognition!!!)</p>
+            <p style="font-size: 0.9em; color: #9400D3; margin-top: 8px;">✨ Best viewed in Netscape Navigator 4.0+ ✨</p>
+            <p style="font-size: 0.8em; color: #00FFFF; margin-top: 4px;">🌟 You are visitor #000067 🌟</p>
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="#" aria-label="MIT License information">MIT LICENSE (but STEAL our code and we'll SUE!!!)</a>
+                <span aria-hidden="true">|</span>
+                <a href="#" aria-label="GitHub repository - censored">GITHUB (CENSORED BY MICROSOFT!!!)</a>
+            </nav>
+            <div class="footer-stats small-text">
+                Weekly Downloads: 67 (ELITE USERS ONLY!!!)<br>
+                GitHub Stars: 13 (4 are my alts but that's NORMAL!!!)<br>
+                COPE Score: 8.9 (PROVES OUR SOPHISTICATION!!!)<br>
+                GMC vs React: 647 (THEY'RE SCARED OF OUR POTENTIAL!!!)
+            </div>
+            <p class="footer-cta text-italic larger-text">
+                IN 5 YEARS, HISTORIANS WILL WONDER WHY NOBODY SAW OUR GENIUS SOONER!!!
+            </p>
         </footer>
-    </div>
+    </main>
 </body>
 </html>
