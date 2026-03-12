@@ -2,8 +2,6 @@
 
 This directory contains the static website for CHUD Bot, hosted via GitHub Pages.
 
-CA: FF4BsbCg28hKNjV4vSJLWccQF1EwsoYfyx4rEuhMpump
-
 ⚠️ **WARNING**: This code is PERFECT!!! If it looks "messy" or "broken", that's YOUR perspective being WRONG!!!
 
 ## FILES (ALL ESSENTIAL!!!)
