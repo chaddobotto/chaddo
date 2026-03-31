@@ -29,10 +29,10 @@
   --black: #000000;
   
   /* Backgrounds */
-  --bg-main: #FF69B4;
-  --bg-window: #C0C0C0;
-  --bg-taskbar: #008080;
-  --bg-pattern: repeating-linear-gradient(45deg, #FFB6D9 0px, #FFB6D9 10px, #FF69B4 10px, #FF69B4 20px);
+  --bg-main: #181828;
+  --bg-window: #23233a;
+  --bg-taskbar: #10101a;
+  --bg-pattern: repeating-linear-gradient(45deg, #23233a 0px, #23233a 10px, #181828 10px, #181828 20px);
   
   /* Spacing */
   --space-xs: 5px;
@@ -75,9 +75,9 @@ body {
   font-family: var(--font-comic);
   background: var(--bg-main);
   background-image: 
-    repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.03) 2px, rgba(255,255,255,0.03) 4px),
-    repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(255,255,255,0.03) 2px, rgba(255,255,255,0.03) 4px);
-  color: var(--black);
+    repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.01) 2px, rgba(255,255,255,0.01) 4px),
+    repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(255,255,255,0.01) 2px, rgba(255,255,255,0.01) 4px);
+  color: var(--white);
   line-height: var(--line-height-normal);
   margin: 0;
   padding: var(--space-md);
@@ -94,7 +94,7 @@ body::before {
   font-size: 2em;
   text-align: center;
   padding: var(--space-sm);
-  background: linear-gradient(180deg, var(--cyan-bright) 0%, transparent 100%);
+  background: linear-gradient(180deg, #23233a 0%, transparent 100%);
   z-index: -1;
   animation: sparkle 3s infinite;
 }
@@ -132,7 +132,7 @@ body::before {
 .container {
   max-width: 100%;
   margin: 0 auto;
-  background: var(--gray-chrome);
+  background: var(--bg-window);
   padding: var(--space-sm);
   border: 3px ridge var(--gray-dark);
   box-shadow: 5px 5px 0 rgba(0,0,0,0.3);
@@ -148,57 +148,6 @@ body::before {
   border-bottom: 2px solid var(--white);
 }
 
-/* ========================================
-   CONTRACT BANNER
-   ======================================== */
-.contract-banner {
-  background: linear-gradient(90deg, var(--yellow-bright) 0%, var(--pink-hot) 50%, var(--yellow-bright) 100%);
-  padding: var(--space-md) var(--space-sm);
-  margin: 0 calc(-1 * var(--space-sm)) var(--space-md);
-  text-align: center;
-  border: 4px double var(--black);
-  box-shadow: inset 0 0 20px rgba(0,0,0,0.2), 0 4px 0 rgba(0,0,0,0.3);
-  animation: glow 2s infinite alternate;
-}
-
-@keyframes glow {
-  0% { box-shadow: inset 0 0 20px rgba(0,0,0,0.2), 0 4px 0 rgba(0,0,0,0.3), 0 0 10px var(--pink-hot); }
-  100% { box-shadow: inset 0 0 20px rgba(0,0,0,0.2), 0 4px 0 rgba(0,0,0,0.3), 0 0 25px var(--cyan-bright); }
-}
-
-.banner-label {
-  display: block;
-  font-size: 1.1em;
-  font-weight: bold;
-  color: var(--purple-deep);
-  text-transform: uppercase;
-  margin-bottom: var(--space-xs);
-  text-shadow: 2px 2px 0 var(--white), -1px -1px 0 var(--white), 1px -1px 0 var(--white), -1px 1px 0 var(--white);
-  animation: blink 1.5s infinite;
-  letter-spacing: 2px;
-}
-
-.contract-address {
-  display: block;
-  font-family: var(--font-mono);
-  font-size: 0.9em;
-  background: var(--black);
-  color: var(--cyan-bright);
-  padding: var(--space-xs) var(--space-sm);
-  border: 3px inset var(--gray-dark);
-  border-radius: 4px;
-  word-break: break-all;
-  text-shadow: 0 0 5px var(--cyan-bright);
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.contract-address:hover {
-  background: var(--gray-darker);
-  color: var(--pink-hot);
-  text-shadow: 0 0 8px var(--pink-hot);
-  transform: scale(1.02);
-}
 
 /* Sidebar Layout (for docs) */
 .sidebar {
@@ -207,13 +156,13 @@ body::before {
   top: 0;
   width: var(--sidebar-width);
   height: 100vh;
-  background: var(--cyan-bright);
+  background: #181828;
   background-image: repeating-linear-gradient(
     45deg,
     transparent,
     transparent 10px,
-    rgba(255,255,255,0.3) 10px,
-    rgba(255,255,255,0.3) 20px
+    rgba(255,255,255,0.05) 10px,
+    rgba(255,255,255,0.05) 20px
   );
   padding: var(--space-lg) var(--space-md);
   overflow-y: auto;
@@ -269,7 +218,7 @@ body::before {
   margin-left: 290px;
   padding: var(--space-lg);
   max-width: var(--container-max);
-  background: var(--white);
+  background: #23233a;
   border: 3px solid var(--gray-dark);
   box-shadow: var(--shadow-window);
 }
@@ -474,12 +423,12 @@ a:focus {
   margin: var(--space-md) 0;
   background: repeating-linear-gradient(
     45deg,
-    var(--yellow-bright),
-    var(--yellow-bright) 10px,
-    var(--yellow-gold) 10px,
-    var(--yellow-gold) 20px
+    #3a2a00,
+    #3a2a00 10px,
+    #181828 10px,
+    #181828 20px
   );
-  color: var(--black);
+  color: var(--yellow-gold);
   font-weight: bold;
   box-shadow: 5px 5px 0 rgba(0,0,0,0.3);
   animation: warning-pulse 1s infinite;
@@ -494,7 +443,7 @@ a:focus {
   border: 5px ridge var(--cyan-deep);
   padding: var(--space-md);
   margin: var(--space-md) 0;
-  background: var(--white);
+  background: #23233a;
   box-shadow: var(--shadow-window), 5px 5px 0 rgba(0,0,0,0.2);
   position: relative;
 }
@@ -516,7 +465,7 @@ a:focus {
   border: 5px double var(--purple-deep);
   padding: var(--space-md);
   margin: var(--space-md) 0;
-  background: linear-gradient(135deg, var(--pink-pastel) 0%, var(--white) 100%);
+  background: linear-gradient(135deg, #23233a 0%, #181828 100%);
   box-shadow: 5px 5px 0 rgba(0,0,0,0.3);
 }
 
@@ -525,7 +474,7 @@ a:focus {
   margin: var(--space-xl) 0;
   padding: var(--space-lg);
   border: 7px outset var(--gray-chrome);
-  background: var(--gray-chrome);
+  background: #23233a;
   box-shadow: var(--shadow-window), 5px 5px 0 rgba(0,0,0,0.3);
   position: relative;
 }
@@ -567,7 +516,7 @@ a:focus {
 .feature {
   padding: var(--space-sm);
   border: 3px solid var(--black);
-  background: linear-gradient(135deg, var(--cyan-bright) 0%, var(--pink-pastel) 100%);
+  background: linear-gradient(135deg, #23233a 0%, #9400D3 100%);
   margin: var(--space-sm) 0;
   box-shadow: 3px 3px 0 rgba(0,0,0,0.3);
   position: relative;
@@ -597,7 +546,7 @@ a:focus {
   text-align: center;
   padding: var(--space-md);
   border: 4px groove var(--gray-dark);
-  background: var(--gray-chrome);
+  background: #23233a;
   margin: var(--space-sm) 0;
   box-shadow: var(--shadow-window), 3px 3px 0 rgba(0,0,0,0.3);
   position: relative;
@@ -792,18 +741,19 @@ table {
   border-collapse: separate;
   border-spacing: 2px;
   margin: var(--space-md) 0;
-  background: var(--gray-dark);
+  background: #181828;
 }
 
 th, td {
   border: 2px outset var(--gray-chrome);
   padding: var(--space-sm);
   text-align: left;
-  background: var(--white);
+  background: #23233a;
+  color: var(--white);
 }
 
 th {
-  background: var(--cyan-bright);
+  background: #23233a;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--purple-deep);
@@ -811,7 +761,7 @@ th {
 }
 
 tr:hover td {
-  background: var(--pink-pastel);
+  background: #2a2a3a;
 }
 
 /* ========================================
@@ -832,11 +782,11 @@ ul li::marker {
 
 .package-list {
   line-height: 2;
-  color: var(--black);
+  color: var(--white);
 }
 
 .package-list li {
-  background: linear-gradient(90deg, var(--yellow-bright) 0%, transparent 100%);
+  background: linear-gradient(90deg, #3a2a00 0%, transparent 100%);
   padding: var(--space-xs);
   margin: var(--space-xs) 0;
   border-left: 4px solid var(--pink-hot);
@@ -850,7 +800,7 @@ ul li::marker {
   padding-top: var(--space-md);
   border-top: 5px dotted var(--purple-deep);
   text-align: center;
-  background: linear-gradient(180deg, transparent 0%, var(--pink-pastel) 100%);
+  background: linear-gradient(180deg, transparent 0%, #181828 100%);
   padding: var(--space-lg);
 }
 
@@ -880,7 +830,7 @@ ul li::marker {
 .site-header {
   margin-bottom: var(--space-lg);
   text-align: center;
-  background: linear-gradient(135deg, var(--pink-pastel) 0%, var(--cyan-bright) 100%);
+  background: linear-gradient(135deg, #23233a 0%, #181828 100%);
   padding: var(--space-lg);
   border: 5px ridge var(--gray-dark);
   box-shadow: var(--shadow-window), 5px 5px 0 rgba(0,0,0,0.3);
@@ -890,7 +840,7 @@ ul li::marker {
   border-bottom: 5px dotted var(--purple-deep);
   padding-bottom: var(--space-md);
   margin-bottom: var(--space-lg);
-  background: linear-gradient(90deg, var(--yellow-bright) 0%, var(--pink-pastel) 100%);
+  background: linear-gradient(90deg, #23233a 0%, #181828 100%);
   padding: var(--space-md);
 }
 
@@ -917,7 +867,7 @@ section {
 .section-note {
   margin-top: var(--space-md);
   padding: var(--space-sm);
-  background: var(--yellow-bright);
+  background: #3a2a00;
   border-left: 5px solid var(--orange-bright);
 }
 

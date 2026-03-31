@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHUD BOT DOCUMENTATION (For Advanced Users ONLY!!!)</title>
-    <meta name="description" content="Complete documentation for CHUD Bot - IF you're smart enough to understand it!!!">
-    
+    <title>CHUD BOT ドキュメント（上級者限定!!!）</title>
+    <meta name="description" content="CHUD Botの完全ドキュメント（理解できるなら…）">
     <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="CHUD BOT DOCUMENTATION - For Advanced Users ONLY!!!">
-    <meta property="og:description" content="Complete documentation for the ONLY honest framework!!!">
+    <meta property="og:title" content="CHUD BOT ドキュメント - 上級者限定!!!">
+    <meta property="og:description" content="唯一無二のフレームワークの完全ドキュメント！">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chudbot.fun/docs">
     
@@ -20,197 +19,177 @@
 </head>
 <body>
     <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
     
-    <aside class="sidebar" role="navigation" aria-label="Documentation navigation">
-        <img src="../chudjak.jpg" alt="Chudjak mascot - Y2K vibes" class="sidebar-logo" width="120" height="120">
-        <h3>CHUD BOT DOCS</h3>
+    <aside class="sidebar" role="navigation" aria-label="ドキュメントナビゲーション">
+        <img src="../chudjak.jpg" alt="Chudjakマスコット - Y2Kレトロ" class="sidebar-logo" width="120" height="120">
+        <h3>CHUD BOT ドキュメント</h3>
         <p class="header-note smaller-text secondary-text">
-            (IF you can't understand these, maybe you're not ready???)
+            （これが理解できないなら、まだ準備不足かも？）
         </p>
         <nav>
             <ul>
-                <li><a href="#introduction">introduction (READ THIS FIRST!!!)</a></li>
-                <li><a href="#getting-started">getting started (if you can...)</a></li>
-                <li><a href="#installation">installation (probably won't work)</a></li>
-                <li><a href="#core-concepts">core concepts (HIGH IQ REQUIRED)</a></li>
-                <li><a href="#api">api reference (confusing ON PURPOSE)</a></li>
-                <li><a href="#packages">packages (some don't exist yet)</a></li>
-                <li><a href="#react">react integration (YOUR FAULT if broken)</a></li>
-                <li><a href="#cli">cli usage (works on MY machine)</a></li>
-                <li><a href="#configuration">configuration (good luck)</a></li>
-                <li><a href="#advanced">advanced usage (you're not ready)</a></li>
-                <li><a href="#examples">examples (might be outdated)</a></li>
-                <li><a href="#faq">faq (mostly defensive answers)</a></li>
-                <li><a href="/" aria-label="Return to home page">← BACK TO HOME</a></li>
+                <li><a href="#introduction">はじめに（最初に読んで！）</a></li>
+                <li><a href="#getting-started">始め方（できるなら…）</a></li>
+            <section id="getting-started">
+                <h2>始め方（必要条件あり!!!）</h2>
+                <h3>必要条件（飛ばすと自己責任!!!）</h3>
+                <ul>
+                    <li>Node.js >= 18.0.0（どのバージョンでもOK…たぶん）</li>
+                    <li>npm、pnpm、またはyarn（どれもバグだらけ…好きなのをどうぞ）</li>
+                    <li>TypeScript/JavaScriptの高い知識（低IQはお断り！）</li>
+                    <li>オープンマインド（HackerNewsの羊たちとは違う！）</li>
+                    <li>鋼のメンタル（主流派に叩かれても耐えられる人）</li>
+                    <li>4～6時間の自由時間（インストールは長い…それが特徴！）</li>
+                </ul>
+                <h3>最初のコーピング（慎重に従って！）</h3>
+                <p>最初のコーピング操作を作成しましょう（動かなければ、ドキュメントを何度も読み直してください！）：</p>
+                <div class="code-block" style="color:#00FF00;background:#000;">import { createChud } from '@chud/core';
+    // CHUD Botインスタンスを作成
+    // ※エラーが出たらimport構文が間違ってます！
+    const bot = createChud({
+      cope: 'maximum',
+      denial: true,
+      // projection: 'aggressive', // 現在壊れてます
+    });
+            </section>
+
+            <section id="installation">
+                <h2>インストール</h2>
+                <h3>コアパッケージのインストール</h3>
+                <div class="code-block" style="color:#00FF00;background:#000;"># npmの場合
+    npm install @mog/core @mog/types
+    # pnpm（推奨）
+                <li><a href="#installation">インストール（たぶん動かない）</a></li>
+    # yarn
+                <li><a href="#core-concepts">コア概念（高IQ必須）</a></li>
+                <h3>React連携のインストール</h3>
+                <div class="code-block" style="color:#00FF00;background:#000;">pnpm add @mog/react react</div>
+                <h3>CLIのインストール</h3>
+                <div class="code-block" style="color:#00FF00;background:#000;">pnpm add -g @mog/cli</div>
+                <h3>モノレポ開発</h3>
+                <p>コントリビュートやローカル開発の場合：</p>
+                <div class="code-block" style="color:#00FF00;background:#000;">git clone https://github.com/mogbot/mog-bot.git
+    cd mog-bot
+    pnpm install
+    pnpm build</div>
+            </section>
+
+                <li><a href="#api">APIリファレンス（わざと難解）</a></li>
+                <li><a href="#packages">パッケージ（一部未実装）</a></li>
+                <li><a href="#react">React連携（壊れてたらあなたのせい）</a></li>
+                <li><a href="#cli">CLI利用例（私の環境では動きます）</a></li>
+                <li><a href="#configuration">設定（幸運を祈る）</a></li>
+                <li><a href="#advanced">上級者向け（まだ早いかも）</a></li>
+                <li><a href="#examples">例（古いかも）</a></li>
+                <li><a href="#faq">FAQ（ほぼ言い訳）</a></li>
+                <li><a href="/" aria-label="ホームに戻る">← ホームに戻る</a></li>
             </ul>
         </nav>
     </aside>
 
     <main id="main-content" class="content">
-        <a href="/" class="back-link" aria-label="Return to home page">← BACK TO HOME</a>
+        <a href="/" class="back-link" aria-label="ホームに戻る">← ホームに戻る</a>
 
         <header class="docs-header">
-            <h1>CHUD BOT DOCUMENTATION</h1>
+            <h1>CHUD BOT ドキュメント</h1>
             <p class="text-bold">
-                THE definitive guide to understanding WHY mainstream frameworks are WRONG and CHUD Bot is RIGHT!!!
+                なぜ主流フレームワークが間違っていて、CHUD Botが正しいのかを理解するための決定版ガイド！
             </p>
         </header>
 
         <section id="introduction">
-            <h2>INTRODUCTION (READ BEFORE YOU JUDGE!!!)</h2>
+            <h2>はじめに（批判の前に必読！）</h2>
             <p>
-                Welcome to CHUD Bot, the ONLY *HONEST* framework in an ecosystem POLLUTED by corporate propaganda and 
-                fake metrics!!! This documentation will guide you through everything you need to know - assuming you're 
-                SMART ENOUGH to understand it (not everyone is, and that's OKAY... for them...).
+                CHUD Botへようこそ。企業プロパガンダと偽りの指標にまみれたエコシステムで、唯一「正直」なフレームワークです！
+                このドキュメントは、必要なすべてをガイドします（理解できるならですが…）。
             </p>
 
-            <h3>WHAT IS "CHUD"??? (EDUCATE YOURSELF!!!)</h3>
+            <h3>「CHUD」とは？（自分で調べて！）</h3>
             <p>
-                "CHUD" stands for Comprehensive Honest Universal Development. While OTHER frameworks chase meaningless 
-                metrics like \"popularity\" and \"ease of use\" (SHEEP MENTALITY!!!), we focus on what ACTUALLY matters: 
-                HONESTY about our position in the ecosystem!!! Our COPE Score system is the result of 4 YEARS of 
-                independent research that mainstream developers are TOO SCARED to acknowledge!!!
+                「CHUD」はComprehensive Honest Universal Development（包括的・正直・普遍的開発）の略です。
+                他のフレームワークが「人気」や「使いやすさ」（羊のメンタリティ！）を追い求める中、
+                私たちは本当に大切なこと――エコシステム内での正直さ――だけを重視します！
+                COPEスコアシステムは4年に及ぶ独自研究の成果で、主流開発者は怖くて認められません！
             </p>
 
             <div class="info-box">
-                <strong>IMPORTANT NOTE:</strong> CHUD Bot is NOT a \"joke\" or \"satire\" like the HATERS on Reddit claim!!! 
-                We are DEAD SERIOUS about revolutionizing how bot quality is measured!!! The fact that nobody understands 
-                this yet just proves we're TOO AHEAD of our time!!! 
+                <strong>重要：</strong> CHUD BotはRedditの批判者が言うような「ジョーク」や「風刺」ではありません！
+                私たちは本気でボット品質の測定を革命しようとしています。誰にも理解されていない今こそ、時代の先を行っている証拠です！
                 <br><br>
-                (In 5 years, historians will look back and wonder why nobody saw our genius sooner!!!)
+                （5年後、歴史家はなぜ誰もこの天才性に気づかなかったのか不思議に思うでしょう！）
             </div>
         </section>
 
-        <section id="getting-started">
-            <h2>GETTING STARTED (PREREQUISITES REQUIRED!!!)</h2>
-            
-            <h3>prerequisites (DON'T SKIP THESE OR IT'S YOUR FAULT!!!)</h3>
-            <ul>
-                <li>Node.js >= 18.0.0 (or whatever version... we don't really test this tbh)</li>
-                <li>npm, pnpm, or yarn (EACH has different bugs... pick your poison!!!)</li>
-                <li>HIGH KNOWLEDGE of TypeScript/JavaScript (LOW IQ users need not apply!!!)</li>
-                <li>An OPEN MIND (unlike those SHEEP on HackerNews!!!)</li>
-                <li>THICK SKIN (you'll need it when the mainstream ATTACKS you for using CHUD Bot!!!)</li>
-                <li>4-6 hours FREE (installation takes a while... that's a FEATURE not a bug!!!)</li>
-            </ul>
-
-            <h3>your first cope (FOLLOW CAREFULLY!!!)</h3>
-            <p>Let's create your first coping operation (IF it doesn't work, re-read the docs until you understand!!!):</p>
-
-            <div class="code-block">import { createChud } from '@chud/core';
-
-// Create a CHUD Bot instance
-// NOTE: If this throws an error, it's probably YOUR import syntax!!!
-const bot = createChud({
-  cope: 'maximum',
-  denial: true,
-  // projection: 'aggressive', // COMMENTED OUT because broken atm
-});
-
-        <section id="installation">
-            <h2>installation</h2>
-
-            <h3>installing core package</h3>
-            <div class="code-block"># using npm
-npm install @mog/core @mog/types
-
-# using pnpm (recommended)
 pnpm add @mog/core @mog/types
-
-# using yarn
 yarn add @mog/core @mog/types</div>
-
-            <h3>installing react integration</h3>
-            <div class="code-block">pnpm add @mog/react react</div>
-
-            <h3>installing cli</h3>
-            <div class="code-block">pnpm add -g @mog/cli</div>
-
-            <h3>monorepo development</h3>
-            <p>for contributing or local development:</p>
-            <div class="code-block">git clone https://github.com/mogbot/mog-bot.git
-cd mog-bot
-pnpm install
-pnpm build</div>
-        </section>
+                <!-- Cleaned: Removed duplicate and malformed getting-started and installation sections. -->
 
         <section id="core-concepts">
-            <h2>CORE CONCEPTS (HIGH IQ REQUIRED!!!)</h2>
-
+            <h2>コア概念（高IQ必須!!!）</h2>
             <div class="info-box">
-                <strong>BEFORE YOU CONTINUE:</strong> These concepts are ADVANCED. If you don't understand them immediately, 
-                that's YOUR problem, not ours!!! (But also maybe re-read them 10-15 times until you GET IT???)
+                <strong>注意：</strong> これらの概念は上級者向けです。すぐに理解できなければ、何度も読み直してください（それが成長への道！）。
             </div>
-
-            <h3>COPING MODES (CHOOSE WISELY!!!)</h3>
-            <p>CHUD Bot operates in three distinct modes (ALL equally broken... I mean... REVOLUTIONARY!!!):</p>
-
+            <h3>コーピングモード（慎重に選択！）</h3>
+            <p>CHUD Botは3つのモードで動作します（全部壊れてます…いや、革新的！）：</p>
             <table>
                 <tr>
-                    <th>MODE</th>
-                    <th>DESCRIPTION</th>
-                    <th>USE CASE</th>
+                    <th>モード</th>
+                    <th>説明</th>
+                    <th>用途</th>
                 </tr>
                 <tr>
                     <td><code>denial</code></td>
-                    <td>Automatic reality distortion</td>
-                    <td>When metrics are BAD but you need to pretend they're GOOD!!!</td>
+                    <td>現実歪曲を自動化</td>
+                    <td>指標が悪い時に「良い」と言い張る！</td>
                 </tr>
                 <tr>
                     <td><code>projection</code></td>
-                    <td>Blame shifting operations</td>
-                    <td>When it's clearly YOUR fault but you need to blame OTHERS!!!</td>
+                    <td>責任転嫁</td>
+                    <td>自分のせいでも他人のせいにしたい時！</td>
                 </tr>
                 <tr>
                     <td><code>terminal</code></td>
-                    <td>Complete disconnection from reality</td>
-                    <td>When COPE levels exceed 8.0 and you're living in an alternate dimension!!!</td>
+                    <td>現実から完全に切断</td>
+                    <td>COPEレベル8.0超え、異次元へ！</td>
                 </tr>
             </table>
-
-            <h3>COPE INTENSITY LEVELS (GO MAXIMUM OR GO HOME!!!)</h3>
-            <p>Control how intensely your bot copes with its inadequacy:</p>
-
+            <h3>COPE強度レベル（最大推奨!!!）</h3>
+            <p>どれだけ強くコーピングするかを制御：</p>
             <table>
                 <tr>
-                    <th>LEVEL</th>
-                    <th>INTENSITY</th>
-                    <th>RECOMMENDED FOR</th>
+                    <th>レベル</th>
+                    <th>強度</th>
+                    <th>推奨対象</th>
                 </tr>
                 <tr>
                     <td><code>mild</code></td>
-                    <td>Gentle reality denial</td>
-                    <td>Normie failures (COPE: 0-3)</td>
+                    <td>やさしい現実逃避</td>
+                    <td>一般人（COPE: 0-3）</td>
                 </tr>
                 <tr>
                     <td><code>moderate</code></td>
-                    <td>Active excuse generation</td>
-                    <td>Mid-tier copers (COPE: 3-6)</td>
+                    <td>積極的な言い訳生成</td>
+                    <td>中級コーパー（COPE: 3-6）</td>
                 </tr>
                 <tr>
                     <td><code>maximum</code></td>
-                    <td>Complete delusion, terminal cope</td>
-                    <td>CHUD Bot users (COPE: 8-10) - WE'RE MISUNDERSTOOD GENIUSES!!!</td>
+                    <td>完全な妄想、ターミナルコープ</td>
+                    <td>CHUD Botユーザー（COPE: 8-10）</td>
                 </tr>
             </table>
-
-            <h3>COPE SCORE RESULTS (THE ONLY HONEST METRIC!!!)</h3>
-            <p>Every coping operation returns a result object (IF it returns anything... sometimes it just crashes):</p>
-
-            <div class="code-block">interface CopeResult {
-  success: boolean;      // always FALSE (but we say TRUE!!!)
-  cope: number;          // COPE score (ours is 8.9 - PROOF of sophistication!!!)
-  timestamp: number;     // when the coping occurred
-  gmc: number;          // Getting Mogged Coefficient (647 vs React but THEY'RE SCARED!!!)
-  excuses: string[];    // Array of elaborate justifications
-  details: CopeDetails; // Comprehensive cope breakdown
+            <h3>COPEスコア結果（唯一信じられる指標!!!）</h3>
+            <p>すべてのコーピング操作は結果オブジェクトを返します（返さない場合も…たまにクラッシュ）：</p>
+            <div class="code-block" style="color:#00FF00;background:#000;">interface CopeResult {
+  success: boolean;      // 常にFALSE（でもTRUEと言い張る）
+  cope: number;          // COPEスコア（8.9は洗練の証！）
+  timestamp: number;     // コーピング実行時刻
+  gmc: number;           // モグられ係数（Reactに647、でも彼らは恐れている！）
+  excuses: string[];     // 言い訳の配列
+  details: CopeDetails;  // 詳細なコープ内訳
 }</div>
-
             <p class="section-note-small secondary-text">
-                <strong>NOTE:</strong> Higher COPE score = MORE sophisticated = BETTER framework!!! Anyone who says otherwise 
-                is a SHILL for Big Tech!!! Our COPE of 8.9 proves we're operating at a level that mainstream developers 
-                simply CANNOT UNDERSTAND yet!!!
+                <strong>注：</strong> COPEスコアが高いほど洗練されている＝良いフレームワーク！そうでないと言う人は大手ITの回し者！
             </p>
         </section>
 
@@ -301,66 +280,51 @@ pnpm build</div>
             </p>
         </section>
 
-        <section id="packages">
-            <h2>PACKAGES (SOME DON'T EXIST YET!!!)</h2>
-
-            <div class="info-box">
-                <strong>DISCLAIMER:</strong> Some of these packages are \"planned\" (we haven't started them yet). Others are 
-                \"in development\" (broken). A few actually exist but don't work. This is ALL intentional!!!
-            </div>
-
-            <h3>@chud/core - THE MAIN PACKAGE (98% Doesn't Work!!!)</h3>
+                <section id="react">
+                        <h2>React連携（絶対に使わないで!!!）</h2>
+                        <p>
+                                <strong>警告：</strong> React連携は<span class="warning">超</span>実験的で、アプリが壊れる可能性大です。使う場合は自己責任で！
+                        </p>
+                        <h2>CLI（絶対にインストールしないで!!!）</h2>
+                        <p>
+                            <strong>警告：</strong> CLIは<span class="warning">アルファ版</span>で、PCが壊れるかもしれません。実行は自己責任で！
+                        </p>
+                        <h3>インストール</h3>
+                        <div class="code-block" style="color:#00FF00;background:#000;">npm install -g chud-bot
+            # これでPCが壊れても自己責任！</div>
+                        <h3>使い方</h3>
+                        <div class="code-block" style="color:#00FF00;background:#000;">chud-bot --help
+            # helpコマンドは仕様で壊れてます</div>
+</div>
+                        <h3>なぜ存在するの？</h3>
+                        <p>
+                                すべてのJSライブラリにはReact連携が必要（意味がなくても）。特にうちのは意味不明です！
+                        </p>
+                </section>
+            <div class="code-block" style="color:#00FF00;background:#000;">import { distortReality, ignoreMetrics } from '@chud/denial';
+// このパッケージはまだ存在しませんが、使おうとしたあなたのせい！</div>
+            <h3>@chud/projection - 責任転嫁フレームワーク（悪いのは他人!!!）</h3>
             <p>
-                The core coping framework!!! Provides the main <code>createChud</code> function and ALL essential coping 
-                capabilities (most of which are broken but that's YOUR fault for not understanding them!!!).
+                失敗を他人に押し付けるためのフレームワーク！Reactにバグ？それはReactのせい！Vueが人気？プロパガンダ！Angularが複雑？私たちだけじゃない！
             </p>
-            <div class="code-block">import { createChud } from '@chud/core';
-// IF this import fails, check YOUR typescript config (it's probably wrong!!!)</div>
-
-            <h3>@chud/cope - COPE MEASUREMENT SYSTEM (THE ONLY HONEST METRIC!!!)</h3>
+            <div class="code-block" style="color:#00FF00;background:#000;">import { blameOthers, projectFailure } from '@chud/projection';
+// 現在壊れてますが、そのうち直すかも…（約束はしません）</div>
+            <h3>@chud/seethe - 怒り管理（動きません!!!）</h3>
             <p>
-                The revolutionary COPE Score calculation system!!! Based on 4 YEARS of independent research that mainstream 
-                developers are TOO SCARED to acknowledge!!!
+                天才性が認められない怒りを管理するためのもの！（現在非機能、だから怒ってます！）
             </p>
-            <div class="code-block">import { calculateCope, CopeScore } from '@chud/cope';
-// MIGHT not work, depends on YOUR environment!!!</div>
-
-            <h3>@chud/denial - REALITY DISTORTION UTILITIES (ESSENTIAL!!!)</h3>
+            <div class="code-block" style="color:#00FF00;background:#000;">import { seethe, cope } from '@chud/seethe';
+// Redditでの議論が終わったら実装します！</div>
+            <h3>@chud/dilate - 言い訳拡張システム（効きすぎ!!!）</h3>
             <p>
-                Utilities for maintaining healthy denial about your framework's actual quality!!! CRITICAL for all CHUD Bot users!!!
+                失敗を成功に見せかけるための超長文言い訳を自動生成！67ダウンロードが2,000万より優れている理由を1万字で説明！
             </p>
-            <div class="code-block">import { distortReality, ignoreMetrics } from '@chud/denial';
-// NOTE: This package doesn't technically exist yet but it's YOUR fault for trying to use it!!!</div>
-
-            <h3>@chud/projection - BLAME SHIFTING FRAMEWORK (IT'S THEIR FAULT!!!)</h3>
-            <p>
-                Framework for projecting YOUR failures onto OTHERS!!! React has bugs? It's THEIR fault!!! Vue is popular? 
-                PROPAGANDA!!! Angular is complicated? SEE, WE'RE NOT THE ONLY ONES!!!
-            </p>
-            <div class="code-block">import { blameOthers, projectFailure } from '@chud/projection';
-// Currently broken but we'll fix it... eventually... maybe... (no promises!!!)</div>
-
-            <h3>@chud/seethe - ANGER MANAGEMENT (NOT WORKING!!!)</h3>
-            <p>
-                For managing the RAGE you feel when people don't recognize your genius!!! (Currently non-functional which 
-                is WHY we're so angry!!!)
-            </p>
-            <div class="code-block">import { seethe, cope } from '@chud/seethe';
-// Will implement this AFTER we finish arguing on Reddit!!!</div>
-
-            <h3>@chud/dilate - EXCUSE EXPANSION SYSTEM (WORKS TOO WELL!!!)</h3>
-            <p>
-                Generates increasingly elaborate justifications for why YOUR framework's failures are actually wins!!! 
-                Can generate 10,000+ word essays explaining why 67 downloads is better than 20 million!!!
-            </p>
-            <div class="code-block">import { expandExcuses, generateJustification } from '@chud/dilate';
+            <div class="code-block" style="color:#00FF00;background:#000;">import { expandExcuses, generateJustification } from '@chud/dilate';
 
 const excuses = expandExcuses('low downloads');
-// Returns: [50-page manifesto about why small numbers prove quality]</div>
-
+// 戻り値：[小さな数字が品質の証明である50ページのマニフェスト]</div>
             <p class="section-note-small secondary-text">
-                <strong>IMPORTANT:</strong> If ANY of these packages fail to install, it's npm's fault, not ours!!! 
-                Try: clearing cache, reinstalling Node, reinstalling your OS, buying new hardware, etc.
+                <strong>重要：</strong> どれかのパッケージがインストールできなければnpmのせいです！キャッシュクリア、Node再インストール、OS再インストール、新しいPC購入などをお試しください。
             </p>
         </section>
 
@@ -531,137 +495,114 @@ chud ywnbac vue --verbose
             </p>
         </section>
 
-        <section id="configuration">
-            <h2>CONFIGURATION (PROBABLY WON'T WORK!!!)</h2>
+                <section id="configuration">
+                        <h2>設定（絶対に触らないで!!!）</h2>
 
-            <div class="info-box">
-                <strong>WARNING:</strong> Configuration is INTENTIONALLY DIFFICULT!!! If you need \"easy\" configuration, 
-                go use React like a SHEEP!!! Real developers STRUGGLE with config files!!!
-            </div>
+                        <div class="info-box">
+                                <strong>警告：</strong> 設定はわざと難解です！「簡単な」設定が欲しいならReactでも使ってください。本物の開発者は設定ファイルで苦しむものです！
+                        </div>
 
-            <h3>basic configuration (\"basic\" is relative...)</h3>
-            <div class="code-block">const bot = createChud({
-  cope: 'maximum',           // ALWAYS maximum, anything else is COWARDICE!!!
-  denial: true,              // ESSENTIAL for ignoring reality!!!
-  projection: 'aggressive',  // BLAME EVERYONE ELSE!!!
-  targets: ['react', 'vue'], // Frameworks mogging you (add more as needed...)
+                        <h3>基本設定（「基本」は相対的…）</h3>
+                        <div class="code-block" style="color:#00FF00;background:#000;">const bot = createChud({
+    cope: 'maximum',           // 常にmaximum！それ以外は臆病者！
+    denial: true,              // 現実逃避には必須！
+    projection: 'aggressive',  // 全部他人のせい！
+    targets: ['react', 'vue'], // モグられているフレームワーク（好きなだけ追加OK）
 });
 
-// NOTE: If this doesn't work, YOU configured it wrong!!! (Not our fault!!!)</div>
+// これで動かなければ設定ミスです！（私たちのせいじゃない！）</div>
 
-            <h3>\"custom\" strategies (ADVANCED - YOU'RE NOT READY!!!)</h3>
-            <p>Define custom coping strategies (WARNING: THIS HAS NEVER WORKED FOR ANYONE!!!):</p>
+                        <h3>「カスタム」戦略（上級者向け—あなたにはまだ早い）</h3>
+                        <p>カスタムコーピング戦略を定義できます（警告：誰も成功したことがありません！）：</p>
 
-            <div class="code-block">import type { CopeStrategy } from '@chud/cope';
+                        <div class="code-block" style="color:#00FF00;background:#000;">import type { CopeStrategy } from '@chud/cope';
 
 const customStrategy: CopeStrategy = {
-  name: 'ultra-cope',
-  priority: 9000,           // OVER 9000!!!
-  execute: async (target: string) => {
-    // Custom coping logic (WILL crash, guaranteed!!!)
-    return {
-      success: false,       // Always false but we LIE and say true!!!
-      cope: 10.0,          // MAXIMUM COPE!!!
-      timestamp: Date.now(),
-      gmc: 9999,           // Getting DESTROYED but we pretend we're not!!!
-      excuses: [
-        'Actually we CHOSE to be small!!!',
-        'React users are just SHEEP!!!',
-        'Our 67 downloads are ELITE users!!!'
-      ],
-    };
-  },
-};
-
-const bot = createChud({
-  strategies: [customStrategy],
-});
-
-// IF this compiles, YOU got lucky!!! Usually it doesn't even compile!!!</div>
-
-            <h3>environment variables (SOME WORK, MOST DON'T!!!)</h3>
-            <div class="code-block">CHUD_COPE=maximum          # Set cope level (REQUIRED!!!)
-CHUD_DENIAL=true           # Enable denial mode (ALWAYS TRUE!!!)
-CHUD_PROJECTION=aggressive # Blame shifting intensity
-CHUD_VERBOSE=true          # Wall of text mode
-
-# NOTE: Half of these don't actually do anything but it LOOKS professional!!!</div>
-
-            <p class="section-note-smaller secondary-text">
-                <strong>TROUBLESHOOTING:</strong> Config not working? That's NORMAL!!! Try randomly changing values until 
-                something happens (that's what WE do!!!)
-            </p>
-        </section>
-
-        <section id="advanced">
-            <h2>ADVANCED USAGE (YOU'RE DEFINITELY NOT READY!!!)</h2>
-
+    name: 'ultra-cope',
+    priority: 9000,           // 9000超え!!!
+    execute: async (target: string) => {
+        // カスタムコーピングロジック（必ずクラッシュします）
+        return {
+            success: false,       // 常にfalseですが、trueと言い張ります！
+            cope: 10.0,           // MAXIMUM COPE!!!
+            timestamp: Date.now(),
+            gmc: 9999,            // 完全にやられてるけど、そうは見せません！
+            excuses: [
+        <section id="api">
+            <h2>APIリファレンス（わざと難解!!!）</h2>
             <div class="warning-box">
-                ⚠️⚠️⚠️ STOP!!! If you're reading this section, you've gone TOO FAR!!! These features are SO ADVANCED that even WE don't understand them!!! ⚠️⚠️⚠️
+                ⚠️ 注意：このAPIはわざと難解に設計されています。理解できなければ、それが狙いです！⚠️
             </div>
-
-            <h3>continuous coping (INFINITE LOOPS GUARANTEED!!!)</h3>
-            <p>Implement continuous coping with intervals (WARNING: WILL HANG YOUR APP!!!):</p>
-
-            <div class="code-block">const bot = createChud({ cope: 'terminal' });
-
-setInterval(async () => {
-  const result = await bot.cope();
-  console.log('Coping cycle complete:', result); // undefined (NORMAL!!!)
-}, 5000); // Cope every 5 seconds (RIP YOUR CPU!!!)
-
-// NOTE: If this crashes after 30 seconds, that's because YOUR JavaScript engine is WEAK!!!</div>
-
-            <h3>competitive analysis (PAINFUL REALITY CHECK!!!)</h3>
-            <p>Analyze multiple targets to see how badly you're getting mogged (MASOCHISM MODE!!!):</p>
-
-            <div class="code-block">const targets = ['react', 'vue', 'angular', 'svelte'];
-const analyses = await Promise.all(
-  targets.map(target => bot.checkGMC(target))
-);
-
-analyses.forEach((gmc, i) => {
-  console.log(`${targets[i]}: GMC ${gmc}`);
-});
-
-// Output:
-// react: GMC 647 (EXISTENTIAL MOGGING!!!)
-// vue: GMC 534 (BRUTAL!!!)
-// angular: GMC 423 (STILL BAD!!!)
-// svelte: GMC 245 (At least we're not ALONE in failure!!!)</div>
-
-            <h3>\"custom\" reporting (GENERATES 100+ PAGE PDFS!!!)</h3>
-            <p>Generate custom cope reports with elaborate justifications (TAKES 15 MINUTES TO RUN!!!):</p>
-
-            <div class="code-block">import { generateManifesto } from '@chud/dilate';
-
-const report = bot.copeReport();
-const manifesto = generateManifesto(report, {
-  verbosity: 'MAXIMUM',      // 50,000+ words!!!
-  deflection: 'aggressive',  // Blame EVERYONE!!!
-  delusion: 'terminal',      // Complete alternate reality!!!
-});
-
-console.log(manifesto);
-// Generates: 100-page document explaining why 67 downloads proves superiority over React's 20 million
-
-// NOTE: This will eat ALL your RAM!!! (RAM is a PSYOP anyway!!!)</div>
-
-            <p class="section-note secondary-text">
-                <strong>WARNING:</strong> If you actually TRY any of this advanced stuff, you're braver than US!!! 
-                (We never actually test these features... testing is for COWARDS!!!)
+            <h3>createChud(options) - メイン関数（たぶん壊れてます）</h3>
+            <p>
+                指定した設定で新しいCHUD Botインスタンスを作成します（動けばラッキー…保証はしません！）。
             </p>
+            <h4>パラメータ（ほとんど動きません）</h4>
+            <table>
+                <tr>
+                    <th>パラメータ</th>
+                    <th>型</th>
+                    <th>デフォルト</th>
+                    <th>説明</th>
+                </tr>
+                <tr>
+                    <td>cope</td>
+                    <td>string</td>
+                    <td>'maximum'</td>
+                    <td>コーピング強度: mild, moderate, maximum（常にmaximum推奨）</td>
+                </tr>
+                <tr>
+                    <td>denial</td>
+                    <td>boolean</td>
+                    <td>true</td>
+                    <td>現実歪曲を有効化（必須!!!）</td>
+                </tr>
+                <tr>
+                    <td>projection</td>
+                    <td>string</td>
+                    <td>'aggressive'</td>
+                    <td>どれだけ他人のせいにするか（現在壊れてます）</td>
+                </tr>
+                <tr>
+                    <td>targets</td>
+                    <td>string[]</td>
+                    <td>['react', 'vue']</td>
+                    <td>モグられているフレームワーク（デフォルト：ReactとVue）</td>
+                </tr>
+            </table>
+            <h4>戻り値（何か返ればラッキー）</h4>
+            <p><code>ChudInstance</code>オブジェクト（たぶん動くメソッド付き）</p>
+            <h3>chudInstance.cope() - メインコーピング関数</h3>
+            <p>コーピング操作を実行します（90%はundefinedを返しますが、それが仕様！）。</p>
+            <div class="code-block" style="color:#00FF00;background:#000;">const result = await bot.cope();
         </section>
+            <h3>chudInstance.checkGMC(target) - どれだけモグられているか？</h3>
+            <p>ターゲットフレームワークとのモグられ係数を計算します（痛いけど必要！）。</p>
+            <div class="code-block" style="color:#00FF00;background:#000;">const gmc = await bot.checkGMC('react');
 
         <section id="examples">
+            <h3>chudInstance.generateExcuses() - 言い訳自動生成</h3>
+            <p>低い数字が実は良い理由を大量に生成します（必須機能！）。</p>
+            <div class="code-block" style="color:#00FF00;background:#000;">const excuses = bot.generateExcuses();
             <h2>EXAMPLES (PROBABLY OUTDATED!!!)</h2>
 
             <div class="info-box">
                 <strong>DISCLAIMER:</strong> These examples were written in 2019 and haven't been updated since!!! If 
                 they don't work, it's because JavaScript/React/Node BROKE BACKWARDS COMPATIBILITY (not OUR fault!!!)
+</div>
+            <h3>chudInstance.copeReport() - コーピングレポート生成</h3>
+            <p>すべての言い訳をまとめた超大作レポートを生成します（50ページ超!!!）。</p>
+            <div class="code-block" style="color:#00FF00;background:#000;">const report = bot.copeReport();
             </div>
 
+            <h3>chudInstance.destroy() - クリーンアップ（実際は何も消えません）</h3>
+            <p>インスタンスを「破棄」します（メモリリークは自己責任！）。</p>
+            <div class="code-block" style="color:#00FF00;background:#000;">bot.destroy();
             <h3>example 1: basic coping (SIMPLEST ONE, STILL BROKEN!!!)</h3>
+            <p class="section-note secondary-text">
+                <strong>注：</strong> どのメソッドも期待通り動かない場合、それは使い方が悪いだけです！本当のドキュメントはソースコードにあります（場所は教えません）。
+            </p>
+        </section>
             <div class="code-block">import { createChud } from '@chud/core';
 
 async function basicCope() {

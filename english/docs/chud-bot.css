@@ -1,0 +1,63 @@
+/*!
+ * CHUD BOT STYLES - Y2K EDITION
+ * Welcome to the NOSTALGIA!!!
+ * Bringing back the GLORY DAYS of the internet!!!
+ */
+
+/* ========================================
+   CSS CUSTOM PROPERTIES
+   ======================================== */
+:root {
+  /* Y2K Colors */
+  --pink-hot: #FF1493;
+  --pink-light: #FF69B4;
+  --pink-pastel: #FFB6D9;
+  --cyan-bright: #00FFFF;
+  --cyan-deep: #0080FF;
+  --yellow-bright: #FFFF00;
+  --yellow-gold: #FFD700;
+  --purple-deep: #9400D3;
+  --purple-light: #DA70D6;
+  --lime-bright: #00FF00;
+  --orange-bright: #FF6600;
+  
+  /* Windows 95 Chrome */
+  --gray-chrome: #C0C0C0;
+  --gray-dark: #808080;
+  --gray-darker: #404040;
+  --white: #FFFFFF;
+  --black: #000000;
+  
+  /* Backgrounds */
+  --bg-main: #181828;
+  --bg-window: #23233a;
+  --bg-taskbar: #10101a;
+  --bg-pattern: repeating-linear-gradient(45deg, #23233a 0px, #23233a 10px, #181828 10px, #181828 20px);
+  
+  /* Spacing */
+  --space-xs: 5px;
+  --space-sm: 10px;
+  --space-md: 15px;
+  --space-lg: 20px;
+  --space-xl: 30px;
+  --space-2xl: 40px;
+  
+  /* Typography */
+  --font-comic: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive;
+  --font-system: 'MS Sans Serif', 'Microsoft Sans Serif', Arial, sans-serif;
+  --font-mono: 'Courier New', 'Courier', monospace;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.4;
+  --line-height-relaxed: 1.6;
+  
+  /* Layout */
+  --container-max: 900px;
+  --sidebar-width: 250px;
+  
+  /* Effects */
+  --shadow-window: inset 1px 1px 0 #FFFFFF, inset -1px -1px 0 #808080;
+  --shadow-button: inset -1px -1px 0 #000000, inset 1px 1px 0 #FFFFFF, inset -2px -2px 0 #808080, inset 2px 2px 0 #DFDFDF;
+  --shadow-pressed: inset 1px 1px 0 #000000, inset -1px -1px 0 #FFFFFF;
+}
+
+/* ...rest of the CSS content... */
