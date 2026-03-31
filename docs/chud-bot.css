@@ -831,7 +831,7 @@ ul li::marker {
   margin-bottom: var(--space-lg);
   text-align: center;
   background:
-    url('../header.gif') center center/cover no-repeat,
+    url('/header.gif') center center/cover no-repeat,
     linear-gradient(135deg, #23233a 0%, #181828 100%);
   padding: var(--space-lg);
   border: 5px ridge var(--gray-dark);
